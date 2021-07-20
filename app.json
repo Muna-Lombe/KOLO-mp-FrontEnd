@@ -1,7 +1,14 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/landing/landing",
+    "pages/profile/profile",
+    "pages/rooms_index/rooms_index",
+    "pages/room_show/room_show",
+    "pages/bookings_index/bookings_index",
+    "pages/bookings_new/bookings_new",
+    "pages/booking_edit/booking_edit"
   ],
   "window":{
     "backgroundTextStyle":"light",
