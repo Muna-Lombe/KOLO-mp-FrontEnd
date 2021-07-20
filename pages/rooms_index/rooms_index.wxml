@@ -5,15 +5,16 @@
   </view>
 
   <view class="room-index-container">
-  <view wx:for="{{rooms}}" wx:for-item="room" wx:key="index"> 
-    <view class="venue-card">
-      <view class="venue-img" style="background-image: url({{room.room_photo_url}})">
+    <view wx:for="{{rooms}}" wx:for-item="room" wx:key="index"> 
+      <view class="venue-card">
+        <navigator url="/page/room_show/room_show?title=navigate" hover-class="navigator-hover"> 
+            <view class="venue-img" style="background-image: url({{room.room_photo_url}})">
+            </view>
+        </navigator>
+        <view class="room-name">{{room.name}}</view>
+        <view class="room-price">{{room.price}}</view>
       </view>
-      <view class="room-name">{{room.name}}</view>
-      <view class="room-price">{{room.price}}</view>
     </view>
-  </view>
-
   </view>
 
 
