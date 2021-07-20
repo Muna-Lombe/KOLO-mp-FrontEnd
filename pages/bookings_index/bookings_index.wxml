@@ -1,2 +1,29 @@
 <!--pages/bookings_index/bookings_index.wxml-->
-<text>pages/bookings_index/bookings_index.wxml</text>
+  <body>
+    <view class="navbar">
+      <view class="booking-header">Bookings</view>
+    </view>
+
+    <view class="booking-container">
+
+      <view class="booking">
+        <view class="name-date">
+          <view class="strong name">Shanghai Pool</view>
+          <view>July 20, 2021</view>
+        </view>
+        <view class="price-book">
+          <view class="price">CNY700</view>
+          <view>
+            <button bindtap="" class="btn">
+              <text>Book Again</text>
+            </button>
+          </view>
+        </view>
+      </view>
+    
+    </view>
+
+
+
+  </body>
+

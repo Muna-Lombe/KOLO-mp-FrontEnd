@@ -23,6 +23,12 @@
           "pathName": "pages/room_show/room_show",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/bookings_index/bookings_index",
+          "pathName": "pages/bookings_index/bookings_index",
+          "query": "",
+          "scene": null
         }
       ]
     }
