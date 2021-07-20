@@ -1,19 +1,45 @@
 // pages/rooms_index/rooms_index.js
+const app = getApp();
 Page({
 
   /**
    * Page initial data
    */
-  data: {
-
+   data: {
+    rooms: [],
   },
-
+  clickMe: function () {
+    this.setData({ text: "See Venue Details" })
+  },
+  switchToRoom: function() {
+    wx.switchTab({
+      url: '/pages/room_show/room_show',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    const page = this;
+    console.log("page loaded")
+    wx.request({
+      url: 'http://localhost:3000/api/v1/rooms',
+      method: 'GET',
+      success(res) {
+        console.log(res)
+        const rooms = res.data;
+        console.log("rooms:", rooms)
+        page.setData({
+          rooms: rooms
+        });
+        wx.hideToast();
+      }
+    });
   },
+
 
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -26,8 +52,11 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    this.setData({
+      rooms: app.globalData.rooms
+    })
   },
+
 
   /**
    * Lifecycle function--Called when page hide

@@ -12,8 +12,20 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    const page = this;
+    wx.request({
+      url: `http://localhost:3000/api/v1/rooms/${options.id}`,
+      method: 'GET',
+      success(res) {
+        const room = res.data;
+        page.setData(
+          room
+        );
+        wx.hideToast();
+      }
+    });
   },
+
 
   /**
    * Lifecycle function--Called when page is initially rendered
