@@ -8,17 +8,7 @@ Page({
    data: {
     rooms: [],
   },
-  // clickMe: function () {
-  //   this.setData({ text: "See Venue Details" })
-  // },
-  // switchToRoom: function() {
-  //   wx.switchTab({
-  //     url: '/pages/room_show/room_show',
-  //     success: function(res) {},
-  //     fail: function(res) {},
-  //     complete: function(res) {},
-  //   })
-  // },
+
   /**
    * Lifecycle function--Called when page load
    */
