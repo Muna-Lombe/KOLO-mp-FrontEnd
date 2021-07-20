@@ -14,7 +14,7 @@ Page({
   onLoad: function (options) {
     const page = this;
     wx.request({
-      url: `http://localhost:3000/api/v1/rooms/${options.id}`,
+      url: `https://kolo-app.herokuapp.com/api/v1/rooms/${options.id}`,
       method: 'GET',
       success(res) {
         const room = res.data;
