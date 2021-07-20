@@ -26,11 +26,11 @@ Page({
     const page = this;
     console.log("page loaded")
     wx.request({
-      url: 'http://localhost:3000/api/v1/rooms',
+      url: 'https://kolo-app.herokuapp.com/api/v1/rooms',
       method: 'GET',
       success(res) {
         console.log(res)
-        const rooms = res.data;
+        const rooms = res.data.rooms;
         console.log("rooms:", rooms)
         page.setData({
           rooms: rooms

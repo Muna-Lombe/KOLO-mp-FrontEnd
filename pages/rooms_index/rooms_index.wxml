@@ -5,13 +5,14 @@
   </view>
 
   <view class="room-index-container">
+  <view wx:for="{{rooms}}" wx:for-item="room" wx:key="index"> 
     <view class="venue-card">
-      <view class="venue-img" style="background-image: url(https://images.unsplash.com/photo-1590912550138-e79ac2c5b8e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWwlMjBwb29sfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)">
+      <view class="venue-img" style="background-image: url({{room.room_photo_url}})">
       </view>
-      <view class="room-name">Shanghai Pool</view>
-      <view class="room-price">CNY700</view>
+      <view class="room-name">{{room.name}}</view>
+      <view class="room-price">{{room.price}}</view>
     </view>
-
+  </view>
 
   </view>
 
