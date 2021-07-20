@@ -2,14 +2,15 @@
 
 .venue-img {
   width: 100%;
-  height: 350px;
+  height: 900rpx;
   background-size: cover;
   margin-top: -20px;
 }
 
 .info-container {
   padding: 10px;
-  font-family: Calibri, sans-serif
+  font-family: Calibri, sans-serif;
+  margin-bottom: 15rpx;
 }
 
 .venue-name {
@@ -29,8 +30,8 @@
 }
 
 .location-icon {
-  width: 25px;
-  height: 31px;
+  width: 72rpx;
+  height: 90rpx;
   margin-top: 10px;
 }
 
@@ -49,20 +50,27 @@
   margin: 20px 0px;
 }
 
+.name-button-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .button-padding {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  border-top: 1px solid #E3E3E3;
+  padding-bottom: 30px;
 }
 
 .btn {
   background-color: #232323;
-  padding: 7px 24px;
   color: white;
   border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: .8;
 }
 
 /* global uses */
