@@ -17,9 +17,9 @@
     <view class="description font-smaller">A nice and relaxing spot in the center of Shanghai. Close to many other attractions, it is the perfect place to take sophisticated...</view>
   </view>
 
-  <!-- change this to real button -->
+        <!-- change this to real button -->
   <view class="button-padding">
-    <view class="btn">CNY700</view>
+        <button bindtap="" class="btn">CNY700</button>
   </view>
 
 </body>
