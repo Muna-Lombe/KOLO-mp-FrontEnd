@@ -11,7 +11,7 @@
             <view class="venue-img"style="background-image: url({{room.room_photo_url}})">        
             </view>
           <view class="room-name">{{room.name}}</view>
-          <view class="room-price">{{room.price}}</view>
+          <view class="room-price">CNY{{room.price}}</view>
         </view>   
       </navigator>
     </view>
