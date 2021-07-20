@@ -10,11 +10,30 @@
     "pages/bookings_new/bookings_new",
     "pages/booking_edit/booking_edit"
   ],
+  "tabBar": {
+    "selectedColor":"#3562A7",
+    "list": [{
+      "pagePath": "pages/rooms_index/rooms_index",
+      "text": "Home",
+      "iconPath": "pages/images/homeicon.png",
+      "selectedIconPath": "pages/images/homeicon.png"
+    }, {
+      "pagePath": "pages/bookings_index/bookings_index",
+      "text": "Bookings",
+      "iconPath": "pages/images/cameraicon.png",
+      "selectedIconPath": "pages/images/cameraicon.png"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "text": "Account",
+      "iconPath": "pages/images/usericon.png",
+      "selectedIconPath": "pages/images/usericon.png"
+    }]
+  },
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#232323",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
