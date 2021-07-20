@@ -1,0 +1,30 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/rooms_index/rooms_index",
+          "pathName": "pages/rooms_index/rooms_index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/room_show/room_show",
+          "pathName": "pages/room_show/room_show",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

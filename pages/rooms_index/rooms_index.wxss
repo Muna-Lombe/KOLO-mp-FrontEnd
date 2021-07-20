@@ -1,0 +1,51 @@
+/* pages/rooms_index/rooms_index.wxss */
+
+.header {
+  background-color: #232323;
+  width: 100%;
+  height: 90px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+}
+
+.room-index-container {
+  margin: 10px;
+  display: grid;
+  font-family: Calibri, sans-serif
+}
+
+.venue-card {
+  height: 260px;
+  width: 140px;
+  background-color: #232323;
+  border-radius: 10px;
+}
+
+.venue-img {
+  height: 85%;
+  background-size: cover;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.room-name {
+  color: white;
+  margin-top: 3px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.room-price {
+  font-size: 12px;
+  color: white;
+  opacity: .6;
+  margin-left: 10px;
+}

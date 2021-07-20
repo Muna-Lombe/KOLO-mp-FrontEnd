@@ -1,0 +1,78 @@
+/* pages/room_show/room_show.wxss */
+
+.venue-img {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  margin-top: -20px;
+}
+
+.info-container {
+  padding: 10px;
+  font-family: Calibri, sans-serif
+}
+
+.venue-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+
+.venue-address {
+  width: 200px;
+  margin: 5px 0px;
+}
+
+.location-icon {
+  width: 25px;
+  height: 31px;
+  margin-top: 10px;
+}
+
+.phone {
+  font-size: 12px;
+  font-weight: bold;
+  color: #3562A7;
+  margin: 10px 0px;
+}
+
+.capacity {
+  margin: 20px 0px;
+}
+
+.description {
+  margin: 20px 0px;
+}
+
+.button-padding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #E3E3E3;
+}
+
+.btn {
+  background-color: #232323;
+  padding: 7px 24px;
+  color: white;
+  border-radius: 5px;
+}
+
+/* global uses */
+
+.font-smaller {
+  font-size: 13px;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+
