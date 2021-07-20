@@ -1,2 +1,25 @@
 <!--pages/room_show/room_show.wxml-->
-<text>pages/room_show/room_show.wxml</text>
+<body>
+  <view class="navbar">
+    <image src='../images/kolowhite.png' class='logo'></image>
+  </view>
+
+  <view class="venue-img" style="background-image: url(https://images.unsplash.com/photo-1590912550138-e79ac2c5b8e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWwlMjBwb29sfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)"></view>
+
+  <view class="info-container">
+    <view class="venue-name">Shanghai Pool</view>
+    <view class="address">
+      <view class="venue-address font-smaller">849 Middle Maomi Road (Close to Huaihai Road), Huangpu District, Shanghai, China 200007</view>
+      <image src='../images/locaticon.png' class='location-icon'></image>
+    </view>
+    <view class="phone">+86 (34) 4938 4939</view>
+    <view class="capacity font-smaller"><view class="strong">Capacity:</view> 10-20 people</view>
+    <view class="description font-smaller">A nice and relaxing spot in the center of Shanghai. Close to many other attractions, it is the perfect place to take sophisticated...</view>
+  </view>
+
+  <!-- change this to real button -->
+  <view class="button-padding">
+    <view class="btn">CNY700</view>
+  </view>
+
+</body>
