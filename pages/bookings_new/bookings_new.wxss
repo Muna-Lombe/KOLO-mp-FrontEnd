@@ -34,8 +34,14 @@ body {
    margin-bottom: 20rpx;
  }
 
+ .line {
+   width: 100%;
+   border: 1px solid rgb(236, 236, 236);
+   margin: 20rpx 0rpx;
+ }
+
  .submit-btn {
-   margin-top: 20rpx;
+   margin-top: 50rpx;
    background-color: #232323;
    color: white;
  }
