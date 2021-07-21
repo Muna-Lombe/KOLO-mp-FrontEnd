@@ -27,8 +27,8 @@
 
     <view class="line"></view>
 
-    <label for="number">Phone Number:</label>
-    <input name="number" class="number mb" placeholder="Your phone number..." />
+    <label for="phone_number">Phone Number:</label>
+    <input name="phone_number" class="number mb" placeholder="Your phone number..." />
 
     <view class="line"></view>
 

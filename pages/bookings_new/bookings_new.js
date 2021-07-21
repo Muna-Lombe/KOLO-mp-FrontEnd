@@ -23,6 +23,23 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
+
+   formSubmit: function(e){
+     const data = e.detail.value
+     data.user_id = 1
+     console.log(data)
+     wx.request({
+       url: 'https://kolo-app.herokuapp.com/api/v1/rooms',
+       method: 'POST',
+       data: data,
+       success(res) {
+         console.log(res)
+       }
+     })
+    // wx.switchTab({
+    //   url: '/pages/rooms_index/rooms_index',
+    // })
+   },
   onLoad: function (options) {
 
   },
