@@ -1,7 +1,12 @@
 <!--pages/room_show/room_show.wxml-->
 <body>
   <view class="navbar">
-    <image src='../images/kolowhite.png' class='logo'></image>
+   <view class="navbar-back">
+      <navigator open-type="navigateBack">
+        <view class="back">Back</view>
+      </navigator>
+      <image src='../images/kolowhite.png' class='logo'></image>
+    </view>
   </view>
 
   <view class="venue-img" style="background-image: url({{room.room_photo_url}})"></view>
