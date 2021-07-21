@@ -1,1 +1,41 @@
 /* pages/profile/profile.wxss */
+
+.navbar {
+  height: 500rpx;
+  flex-direction: column;
+}
+
+.avatar-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.user-name {
+  font-size: 60rpx;
+  color: white;
+}
+
+.edit-profile {
+  color: #C4C4C4;
+  opacity: .7;
+  margin-right: 60rpx;
+}
+
+.avatar {
+  background-image: url(https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background-size: cover;
+  margin-right: 30rpx;
+}
+
+.btns {
+  margin-top: 20rpx;
+  display: flex;
+}
+
+.bookings-btn {
+  margin-right: 5px;
+}

@@ -1,2 +1,19 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<body>
+  <view class="navbar">
+    <view class="avatar-name">
+      <view class="avatar"></view>
+      <view class="name-editprofile">
+        <view class="user-name">Hugh Jass</view>
+        <navigator url="" class="edit-profile">View/edit information ></navigator>
+      </view>
+    </view>
+
+    <view class="btns">
+      <button class="bookings-btn">Check Bookings</button>
+      <button class="favourites">Favourites</button>
+    </view>
+
+  </view>
+
+</body>
