@@ -10,9 +10,11 @@
     </view>
 
     <view class="btns">
-      <navigator url="/page/bookings_index/bookings_index" open-type="switchTab">
-        <view class="bookings-btn text-center">Check Bookings</view>
-      </navigator> 
+      <view>
+        <navigator url="/page/bookings_index/bookings_index" open-type="switchTab">
+          <view class="bookings-btn text-center">Check Bookings</view>
+        </navigator> 
+      </view>
       <navigator url="" class="favourites text-center">Favourites</navigator>
     </view>
   </view>
