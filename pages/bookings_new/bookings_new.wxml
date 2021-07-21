@@ -12,10 +12,31 @@
   <view class="form-container">
     <form bindsubmit="formSubmit" >
 
+
+    <label for="name">Name:</label>
+    <input name="name" class="name mb" placeholder="Event or venue name..." />
+
+    <view class="line"></view>
+
+    <label for="date">Event Date:</label>
+    <input name="date" class="date mb" placeholder="ex: July 20, 2021" />
+
+    <view class="line"></view>
+
+    <label for="address">Location</label>
+    <input name="address" class="address mb" placeholder="Venue address..." />
+
+    <view class="line"></view>
+
+    <label for="phone_number">Phone Number:</label>
+    <input name="phone_number" class="number mb" placeholder="Your phone number..." />
+
+    <view class="line"></view>
     <view class="input-box">
       <label for="name">Name:</label>
       <input name="name" class="name mb" placeholder="Event or venue name..." />
     </view>
+
 
     <view class="input-box">
       <label for="date">Event Date:</label>
