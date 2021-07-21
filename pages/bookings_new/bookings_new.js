@@ -8,6 +8,18 @@ Page({
 
   },
 
+  takePhoto: function() {
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original'],
+      sourceType: ['album', 'camera'],
+      success: function (res) {
+        var tempFilePaths = res.tempFilePaths
+        console.log(tempFilePaths)
+      }
+    })
+  },
+
   /**
    * Lifecycle function--Called when page load
    */

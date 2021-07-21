@@ -41,6 +41,12 @@
           "pathName": "pages/profile/profile",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/bookings_new/bookings_new",
+          "pathName": "pages/bookings_new/bookings_new",
+          "query": "",
+          "scene": null
         }
       ]
     }
