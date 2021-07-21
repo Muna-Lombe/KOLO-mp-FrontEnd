@@ -1,3 +1,173 @@
 /* pages/profile/profile.wxss */
 
+body {
+  font-family: Calibri, sans-serif;
+}
+
+.navbar {
+  height: 450rpx;
+  flex-direction: column;
+  padding-top: 90rpx;
+}
+
+.avatar-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.user-name {
+  font-size: 60rpx;
+  color: white;
+}
+
+.edit-profile {
+  color: #C4C4C4;
+  opacity: .7;
+  margin-right: 60rpx;
+}
+
+.avatar {
+  background-image: url(https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background-size: cover;
+  margin-right: 30rpx;
+}
+
+.btns {
+  width: 620rpx;
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  bottom: 10px;
+}
+
+.bookings-btn {
+  padding: 8rpx 24rpx;
+  width: 220rpx;
+  background-color: white;
+  color: #3562A7;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bookings-btn:hover {
+  opacity: .9;
+}
+
+.favourites {
+  text-align: center;
+  padding: 8rpx 24rpx;
+  width: 220rpx;
+  background-color: white;
+  color: #3562A7;
+  border: 1px solid #3562A7;
+  border-radius: 5px;
+}
+
+.favourites:hover {
+  opacity: .9;
+}
+
+/* listing css */
+
+.listing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20rpx;
+}
+
+.listing {
+  display: flex;
+  padding: 5px;
+  margin: 10px 0px;
+  width: 690rpx;
+  height: 220rpx;
+  background-color:white;
+  box-shadow: 0px 0px 2px rgba(196,196,196,0.9);
+  border-radius: 5px;
+}
+.name-date {
+  margin-top: 40rpx;
+}
+
+.listing-img {
+  width: 130rpx;
+  height: 130rpx;
+  background-size: cover;
+  border-radius: 5px;
+  margin-left: 20rpx;
+  margin-right: 25rpx;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.name {
+  font-size: 40rpx;
+}
+
+.info-edit {
+  display: flex;
+}
+
+.btn {
+  padding: 8rpx 48rpx;
+  border-radius: 5px;
+  color:#3562A7;
+  border: 1px solid #3562A7;
+  margin-top: 140rpx;
+  margin-left: 100rpx;
+}
+
+.btn text {
+  font-size: 35rpx;
+}
+
+.text-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* new listing */
+
+.new-listing {
+  display: flex;
+  padding: 5px;
+  margin: 10px 0px;
+  width: 690rpx;
+  height: 220rpx;
+  background-color:white;
+  box-shadow: 0px 0px 2px rgba(196,196,196,0.9);
+  border-radius: 5px;
+}
+
+.align-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add-img {
+  width: 130rpx;
+  height: 130rpx;
+  background-size: cover;
+  border-radius: 5px;
+  margin-left: 20rpx;
+  margin-right: 25rpx;
+  opacity: .3;
+  border: 1px solid rgba(196,196,196,0.3);
+}
+
+.make-listing {
+  color: rgba(196,196,196,0.8);
+}
 
