@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-
+    listings: ""
   },
   // switchToBookingsIndex: function() {
   //   wx.switchTab({
@@ -16,7 +16,18 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    const page = this
+    wx.request({
+      url: `https://kolo-app.herokuapp.com/api/v1/users/1/profile`,
+      success(res) {
+        console.log(res.data)
+        const listings = res.data.my_rooms;
+        console.log(listings)
+        page.setData({
+          listings: listings
+        })
+      }
+    })
   },
 
   /**
