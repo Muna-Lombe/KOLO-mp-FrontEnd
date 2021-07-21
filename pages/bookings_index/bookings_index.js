@@ -13,6 +13,7 @@ Page({
    */
   onLoad: function (options) {
     const page = this
+    console.log(options)
     wx.request({
       url: `https://kolo-app.herokuapp.com/api/v1/users/1/profile`,
       success(res) {
@@ -37,7 +38,19 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    console.log("this.options",this.options)
+    const page = this
+    wx.request({
+      url: `https://kolo-app.herokuapp.com/api/v1/users/1/profile`,
+      success(res) {
+        console.log(res.data)
+        const listings = res.data.bookings;
+        console.log(listings)
+        page.setData({
+          listings: listings
+        })
+      }
+    })
   },
 
   /**

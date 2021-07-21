@@ -11,40 +11,40 @@
 
   <view class="form-container">
     <form bindsubmit="formSubmit" >
-
+    
     <view class="input-box">
       <label for="name">Name:</label>
-      <input name="name" class="name mb" placeholder="Event or venue name..." />
+      <input name="name" value = "{{name}}" class="name mb" placeholder="Event or venue name..." />
     </view>
 
     <view class="input-box">
       <label for="date">Event Date:</label>
-      <input name="date" class="date mb" placeholder="ex: July 20, 2021" />
+      <input name="date" value="{{date}}" class="date mb" placeholder="ex: July 20, 2021" />
     </view>
 
     <view class="input-box">
       <label for="address">Location</label>
-      <input name="address" class="address mb" placeholder="Venue address..." />
+      <input name="address" value="{{address}}" class="address mb" placeholder="Venue address..." />
     </view>
 
     <view class="input-box">
-      <label for="number">Phone Number:</label>
-      <input name="number" class="number mb" placeholder="Your phone number..." />
+      <label for="phone_number">Phone Number:</label>
+      <input name="phone_number" value="{{phone_number}}" class="number mb" placeholder="Your phone number..." />
     </view>
 
     <view class="input-box">
       <label for="capacity">Capacity:</label>
-      <input name="capacity" class="capacity mb" placeholder="Number of people..." />
+      <input name="capacity" value="{{capacity}}" class="capacity mb" placeholder="Number of people..." />
     </view>
 
     <view class="input-box">
       <label>Description:</label>
-      <input name="description" class="description mb" placeholder="Description..." />
+      <input name="description" value="{{description}}" class="description mb" placeholder="Description..." />
     </view>
 
     <view class="input-box">
       <label>Price:</label>
-      <input name="price" class="price mb" placeholder="Put a price..." />
+      <input name="price" value="{{price}}" class="price mb" placeholder="Put a price..." />
     </view>
       
     <view class="add-img mb" bindtap="takePhoto"><image src='../images/uploadicon.png' class='upload-icon'></image>Upload an image</view>
