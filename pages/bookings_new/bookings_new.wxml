@@ -1,3 +1,64 @@
 <!--pages/bookings_new/bookings_new.wxml-->
+<body>
+  <view class="navbar">
+   <view class="navbar-back">
+      <navigator open-type="navigateBack">
+        <view class="back">Back</view>
+      </navigator>
+      <view class='header-text'>Make a Listing</view>
+    </view>
+  </view>
 
+  <view class="form-container">
+    <form bindsubmit="formSubmit" >
+
+    <label for="name">Name:</label>
+    <input name="name" class="name mb" placeholder="Event or venue name..." />
+
+    <view class="line"></view>
+
+    <label for="date">Event Date:</label>
+    <input name="date" class="date mb" placeholder="ex: July 20, 2021" />
+
+    <view class="line"></view>
+
+    <label for="address">Location</label>
+    <input name="address" class="address mb" placeholder="Venue address..." />
+
+    <view class="line"></view>
+
+    <label for="number">Phone Number:</label>
+    <input name="number" class="number mb" placeholder="Your phone number..." />
+
+    <view class="line"></view>
+
+    <label for="capacity">Capacity:</label>
+    <input name="capacity" class="capacity mb" placeholder="Number of people..." />
+
+    <view class="line"></view>
+
+    <label>Description:</label>
+    <input name="description" class="description mb" placeholder="Description..." />
+
+    <view class="line"></view>
+
+    <label>Price:</label>
+    <input name="price" class="price mb" placeholder="Put a price..." />
+
+    <view class="line"></view>
+      
+    <view class="add-img" bindtap="takePhoto"><image src='../images/uploadicon.png' class='upload-icon'></image>Upload an image</view>
+
+    <view class="line"></view>
+
+    <button class="submit-btn" form-type="submit">Submit</button>
+
+    </form>
+
+
+  </view>
+
+
+
+  </body>
 
