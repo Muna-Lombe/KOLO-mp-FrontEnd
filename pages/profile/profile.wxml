@@ -10,7 +10,9 @@
     </view>
 
     <view class="btns">
-      <navigator url="" class="bookings-btn text-center">Check Bookings</navigator>
+      <navigator url="/page/bookings_index/bookings_index" open-type="switchTab">
+        <view class="bookings-btn text-center">Check Bookings</view>
+      </navigator> 
       <navigator url="" class="favourites text-center">Favourites</navigator>
     </view>
   </view>
@@ -31,7 +33,7 @@
         </view>
       </view>
     </view>
-    <navigator url = "/pages/bookings_new/bookings_new">
+    <navigator url="/pages/bookings_new/bookings_new">
       <view class="new-listing">
         <view class="align-center">
           <image src='../images/plusicon.png' class='add-img'></image>
