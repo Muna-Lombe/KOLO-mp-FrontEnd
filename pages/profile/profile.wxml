@@ -31,9 +31,12 @@
             <view class="strong name">{{listing.name}}</view>
             <view class="posted">Posted: {{listing.date}}</view>
           </view>
-          <view class="btn text-center">
-            <text>Edit</text>
-          </view>
+          <!-- <navigator url= "" extra-data="{{listingData}}"> -->
+            <view class="btn text-center">
+              <text id="{{listing.id}}" bindtap = "passData">Edit</text>
+            </view>
+          <!-- </navigator> -->
+          
         </view>
       </view>
     </view>
