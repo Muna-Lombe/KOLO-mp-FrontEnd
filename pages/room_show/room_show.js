@@ -1,6 +1,6 @@
 // pages/room_show/room_show.js
 Page({
-
+  
   /**
    * Page initial data
    */
@@ -11,6 +11,29 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
+
+   bookItem: function(e){
+     const roomId = this.data.room.id
+     const date = this.data.room.date
+     const userId = 2
+     console.log(roomId)
+     console.log(userId)
+     console.log(date)
+     wx.request({
+      url: `https://kolo-app.herokuapp.com/api/v1/bookings/`,
+      method: 'POST',
+      data: {
+        date: date,
+        room_id:roomId,
+        user_id:userId
+      },
+      success(res) {
+        const booking = res.data;
+        console.log(booking);
+        wx.hideToast();
+      }
+    });
+   },
   onLoad: function (options) {
     const page = this;
     wx.request({

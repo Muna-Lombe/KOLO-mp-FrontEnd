@@ -29,6 +29,12 @@
           "pathName": "pages/bookings_index/bookings_index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/bookings_new/bookings_new",
+          "pathName": "pages/bookings_new/bookings_new",
+          "query": "",
+          "scene": null
         }
       ]
     }
