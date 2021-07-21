@@ -24,7 +24,7 @@
 
         <!-- change this to real button -->
   <view class="button-padding">
-        <button bindtap="" class="btn">CNY {{room.price}}</button>
+        <button bindtap="bookItem" class="btn">CNY {{room.price}}</button>
   </view>
 
 </body>
