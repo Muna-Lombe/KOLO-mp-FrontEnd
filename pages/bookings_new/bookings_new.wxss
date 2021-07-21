@@ -28,16 +28,13 @@ body {
 
  .form-container {
    margin: 20rpx;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
  }
-
+ 
  .mb {
-   margin-bottom: 20rpx;
- }
-
- .line {
-   width: 100%;
-   border: 1px solid rgb(236, 236, 236);
-   margin: 20rpx 0rpx;
+   margin-bottom: 40rpx;
  }
 
  .submit-btn {
@@ -48,7 +45,15 @@ body {
 
  input {
   margin-top: 15rpx;
-  font-size: 25rpx;
+  font-size: 27rpx;
+  background-color: white;
+  padding: 5rpx 0rpx;
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 5px;
+}
+
+label {
+  font-size: 35rpx;
 }
 
 .add-img {
