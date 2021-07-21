@@ -15,7 +15,7 @@ Page({
    bookItem: function(e){
      const roomId = this.data.room.id
      const date = this.data.room.date
-     const userId = 2
+     const userId = 1
      console.log(roomId)
      console.log(userId)
      console.log(date)
