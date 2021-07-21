@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-
+    
   },
 
   /**
@@ -18,8 +18,9 @@ Page({
       method: 'GET',
       success(res) {
         const room = res.data;
+        console.log(room);
         page.setData(
-          room
+          {room}
         );
         wx.hideToast();
       }
