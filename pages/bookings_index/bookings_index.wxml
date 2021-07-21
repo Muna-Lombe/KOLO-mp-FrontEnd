@@ -14,9 +14,11 @@
         <view class="price-book">
           <view class="price">CNY700</view>
           <view>
-            <button bindtap="" class="btn">
-              <text>Book Again</text>
-            </button>
+            <navigator url="/pages/bookings_new/bookings_new">
+              <button bindtap="" class="btn">
+                <text>Book Again</text>  
+              </button>
+            </navigator>
           </view>
         </view>
       </view>
