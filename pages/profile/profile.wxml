@@ -1,2 +1,46 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<body>
+  <view class="navbar">
+    <view class="avatar-name">
+      <view class="avatar"></view>
+      <view class="name-editprofile">
+        <view class="user-name">Hugh Jass</view>
+        <navigator url="" class="edit-profile">View/edit information ></navigator>
+      </view>
+    </view>
+
+    <view class="btns">
+      <navigator url="" class="bookings-btn text-center">Check Bookings</navigator>
+      <navigator url="" class="favourites text-center">Favourites</navigator>
+    </view>
+  </view>
+
+
+  <view class="listing-container">
+    <view class="listing">
+      <view class="align-center">
+        <image src='https://images.unsplash.com/photo-1590912550138-e79ac2c5b8e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWwlMjBwb29sfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60' class='listing-img'></image>
+      </view>
+      <view class="info-edit">
+        <view class="name-date">
+          <view class="strong name">Shanghai Pool</view>
+          <view class="posted">Posted: July 20, 2021</view>
+        </view>
+        <view class="btn text-center">
+          <text>Edit</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="new-listing">
+      <view class="align-center">
+        <image src='../images/plusicon.png' class='add-img'></image>
+      </view>
+      <view class="make-listing text-center">Create a new listing...</view>
+    </view>
+
+  
+  </view>
+
+
+</body>
