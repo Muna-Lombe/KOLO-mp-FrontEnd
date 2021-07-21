@@ -7,7 +7,11 @@ Page({
   data: {
 
   },
-
+  // switchToBookingsIndex: function() {
+  //   wx.switchTab({
+  //     url: '/pages/bookings_index/bookings_index'
+  //   })
+  // },
   /**
    * Lifecycle function--Called when page load
    */
