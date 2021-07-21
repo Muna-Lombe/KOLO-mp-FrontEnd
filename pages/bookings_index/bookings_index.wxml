@@ -5,11 +5,11 @@
     </view>
 
     <view class="booking-container">
-
-      <view class="booking">
+      <view wx:for="{{listings}}" wx:for-item="listing" wx:key="index">
+        <view class="booking">
         <view class="name-date">
-          <view class="strong name">Shanghai Pool</view>
-          <view>July 20, 2021</view>
+          <view class="strong name">{{listing.name}}</view>
+          <view>{{listing.date}}</view>
         </view>
         <view class="price-book">
           <view class="price">CNY700</view>
@@ -25,6 +25,8 @@
     
     </view>
 
+      </view>
+      
 
 
   </body>

@@ -31,6 +31,9 @@ Page({
         const booking = res.data;
         console.log(booking);
         wx.hideToast();
+        wx.switchTab({
+          url: '/pages/bookings_index/bookings_index',
+        })
       }
     });
    },
