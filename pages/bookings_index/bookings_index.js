@@ -13,6 +13,7 @@ Page({
    */
   onLoad: function (options) {
     const page = this
+    console.log(options)
     wx.request({
       url: `https://kolo-app.herokuapp.com/api/v1/users/1/profile`,
       success(res) {

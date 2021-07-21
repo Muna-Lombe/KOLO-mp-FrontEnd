@@ -36,9 +36,9 @@ Page({
          console.log(res)
        }
      })
-    // wx.switchTab({
-    //   url: '/pages/rooms_index/rooms_index',
-    // })
+    wx.switchTab({
+      url: '/pages/rooms_index/rooms_index',
+    })
    },
   onLoad: function (options) {
 

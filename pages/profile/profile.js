@@ -15,8 +15,34 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
+  passData: function(e){
+    console.log(e.currentTarget.id)
+    const id = e.currentTarget.id
+    console.log(this.data.listings[id-1])
+    const listingData = this.data.listings[id-1]
+    wx.navigateTo({
+      url: `/pages/booking_edit/booking_edit?id= ${id}`,
+    })
+  },
+
+  deleteData:function(){
+    wx.request({
+      url: `https://kolo-app.herokuapp.com/api/v1/rooms/${id}`,
+      method: "DELETE",
+      data: data,
+      success(res) {
+        console.log("success")
+        console.log(res.data)
+        wx.navigateBack({
+          delta: 0,
+        })
+      }
+    })
+  },
+
   onLoad: function (options) {
     const page = this
+    console.log(options)
     wx.request({
       url: `https://kolo-app.herokuapp.com/api/v1/users/1/profile`,
       success(res) {
@@ -54,8 +80,8 @@ Page({
   /**
    * Lifecycle function--Called when page unload
    */
-  onUnload: function () {
-
+  onUnload: function (e) {
+    console.log(e)
   },
 
   /**
