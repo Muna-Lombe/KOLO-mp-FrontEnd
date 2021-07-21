@@ -31,13 +31,15 @@
         </view>
       </view>
     </view>
-
-    <view class="new-listing">
-      <view class="align-center">
-        <image src='../images/plusicon.png' class='add-img'></image>
+    <navigator url = "/pages/bookings_new/bookings_new">
+      <view class="new-listing">
+        <view class="align-center">
+          <image src='../images/plusicon.png' class='add-img'></image>
+        </view>
+        <view class="make-listing text-center">Create a new listing...</view>
       </view>
-      <view class="make-listing text-center">Create a new listing...</view>
-    </view>
+    </navigator>
+    
 
   
   </view>
