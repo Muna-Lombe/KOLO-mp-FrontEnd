@@ -3,7 +3,7 @@
   <view class="navbar">
    <view class="navbar-back">
       <navigator open-type="navigateBack">
-        <view class="back">Back</view>
+        <view class="back"><image src='../images/backicon.png' class='back-icon'></image></view>
       </navigator>
       <image src='../images/kolowhite.png' class='logo'></image>
     </view>
