@@ -6,10 +6,21 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
+    const that = this
     // 登录
     wx.login({
       success: res => {
         console.log(res)
+        wx.request({
+          url: 'https://kolo-app.herokuapp.com/api/v1/login',
+          method: 'POST',
+          data:{code:res.code},
+          success(res){
+            console.log("res",res)
+            that.globalData.userInfo = res.data.user
+          }
+        })
+        // send the code to the backend
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
@@ -34,7 +45,7 @@ App({
     // })
   },
   globalData: {
-    userId: "",
+    userInfo:"",
     language: "EN",
     rooms: []
   }
