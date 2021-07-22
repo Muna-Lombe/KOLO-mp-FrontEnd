@@ -3,7 +3,7 @@
   <view class="navbar">
    <view class="navbar-back">
       <navigator open-type="navigateBack">
-        <view class="back">Back</view>
+        <view class="back"><image src='../images/backicon.png' class='back-icon'></image></view>
       </navigator>
       <view class='header-text'>Make a Listing</view>
     </view>
@@ -49,7 +49,7 @@
       
     <view class="add-img" bindtap="takePhoto"><image src='../images/uploadicon.png' class='upload-icon'></image>Upload an image</view>
 
-    <button class="submit-btn" form-type="submit">Submit</button>
+    <view class="submit-btn" form-type="submit">Submit</view>
 
     </form>
     </view>

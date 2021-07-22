@@ -24,6 +24,11 @@ body {
   left: 30rpx;
 }
 
+.back-icon {
+  width: 20rpx;
+  height: 38rpx;
+}
+
  /* form */
 
  .form-container {
@@ -38,9 +43,17 @@ body {
  }
 
  .submit-btn {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
    margin-top: 50rpx;
    background-color: #232323;
    color: white;
+   width: 100%;
+   height: 80rpx;
+   border-radius: 5px;
+   font-size: 40rpx;
  }
 
  input {
@@ -76,3 +89,4 @@ label {
   height: 32rpx;
   margin-right: 5rpx;
 }
+
