@@ -7,9 +7,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Calibri, sans-serif;
 }
 
 .landing-logo {
   width: 500rpx;
   height: 240rpx;
+  margin-left: 5rpx;
+}
+
+.wechat-btn {
+  background-image: linear-gradient(-240deg, #51C332, #47A82C);
+  /* background-color: #51C332; */
+  padding: 16rpx 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 150rpx;
+}
+
+.wechat-icon {
+  width: 50rpx;
+  height: 40rpx;
+}
+
+.login-btn text {
+  color: white;
+  font-size: 30rpx;
+}
+
+.slogan {
+  margin-top: 20rpx;
+  opacity: .7;
 }

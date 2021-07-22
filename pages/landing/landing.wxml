@@ -3,6 +3,14 @@
 <body>
     <view class="landing-container">
       <image src='../images/kolo.png' class='landing-logo'></image>
+
+    <view class="slogan">
+      <text>Find friends, book locations, share costs</text>
+    </view>
+
+      <navigator url="" class="wechat-btn">
+      <view class="login-btn"><image src='../images/wechaticon.png' class='wechat-icon'></image> <text> Login</text></view>
+      </navigator>
     </view> 
 
 </body>
