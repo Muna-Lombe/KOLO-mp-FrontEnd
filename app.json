@@ -11,7 +11,7 @@
     "pages/booking_edit/booking_edit"
   ],
   "tabBar": {
-    "selectedColor":"#3562A7",
+    "selectedColor":"#8EC4D2",
     "list": [{
       "pagePath": "pages/rooms_index/rooms_index",
       "text": "Home",

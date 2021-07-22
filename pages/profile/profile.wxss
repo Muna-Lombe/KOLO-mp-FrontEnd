@@ -5,50 +5,81 @@ body {
 }
 
 .navbar {
-  height: 450rpx;
+  height: 500rpx;
   flex-direction: column;
   padding-top: 90rpx;
+  position: relative;
+  background-image: linear-gradient(-60deg, #A9E4F4, #61afc7);
+}
+
+.curvedline {
+  position: absolute;
+  width: 828rpx;
+  height: 114rpx;
+  z-index: -1;
+  opacity: .2;
 }
 
 .avatar-name {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   margin-bottom: 10rpx;
 }
 
 .user-name {
-  font-size: 60rpx;
+  margin-top: 20rpx;
+  font-size: 50rpx;
   color: white;
 }
 
-.edit-profile {
-  color: #C4C4C4;
-  opacity: .7;
-  margin-right: 60rpx;
+.name-editprofile {
+  margin-bottom: 100rpx;
 }
 
-.avatar {
-  background-image: url(https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+.edit-profile {
+  color: #232323;
+  opacity: .5;
+}
+
+.border-around {
+  border-radius: 50%;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  padding-top: 10rpx;
+  border: .5rpx solid white;
+}
+
+.border-around image {
   width: 150rpx;
   height: 150rpx;
   border-radius: 50%;
-  background-size: cover;
-  margin-right: 30rpx;
 }
 
 .btns {
-  width: 620rpx;
+  width: 520rpx;
   margin-top: 50rpx;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   bottom: 10px;
+  /* background-image: linear-gradient(-60deg, #232323, #504c4c); */
+  background-color: #ffffff;
+  height: 150rpx;
+  position: absolute;
+  bottom: -70rpx;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
 }
 
 .bookings-btn {
-  padding: 8rpx 24rpx;
-  width: 220rpx;
-  background-color: white;
-  color: #3562A7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
   border-radius: 5px;
   text-align: center;
   font-size: 25rpx;
@@ -58,19 +89,33 @@ body {
   opacity: .9;
 }
 
+.addlist-icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+
 .favourites {
-  text-align: center;
-  padding: 8rpx 24rpx;
-  width: 220rpx;
-  background-color: white;
-  color: #3562A7;
-  border: 1px solid #3562A7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
   border-radius: 5px;
+  text-align: center;
   font-size: 25rpx;
 }
 
 .favourites:hover {
   opacity: .9;
+}
+
+.heart-icon {
+  width: 57rpx;
+  height: 50rpx;
+}
+
+.small-text {
+  font-size: 22rpx;
 }
 
 /* listing css */
@@ -81,6 +126,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 20rpx;
+  margin-top: 80rpx;
 }
 
 .listing {
@@ -90,9 +136,10 @@ body {
   width: 690rpx;
   height: 220rpx;
   background-color:white;
-  box-shadow: 0px 0px 2px rgba(196,196,196,0.9);
+  box-shadow: 0px 0px 2px rgba(50, 92, 155,0.3);
   border-radius: 5px;
 }
+
 .name-date {
   margin-top: 40rpx;
   width: 350rpx;
@@ -113,7 +160,7 @@ body {
 }
 
 .name {
-  font-size: 35rpx;
+  font-size: 37rpx;
 }
 
 .posted {
@@ -126,7 +173,7 @@ body {
 
 .btn {
   position: absolute;
-  color:#3562A7;
+  color:#61afc7;
   bottom: 0;
   right: 0;
   font-size: 35rpx;

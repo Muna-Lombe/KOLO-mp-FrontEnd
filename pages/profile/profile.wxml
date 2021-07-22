@@ -2,20 +2,30 @@
 <body>
   <view class="navbar">
     <view class="avatar-name">
-      <view class="avatar"></view>
+      <view class="border-around">
+        <image src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60' mode="aspectFill" class='avatar'></image>
+      </view>
+      <!-- <view class="avatar"></view> -->
       <view class="name-editprofile">
-        <view class="user-name">Hugh Jass</view>
+        <view class="user-name">Amanda Hugginkiss</view>
         <navigator url="" class="edit-profile">View/edit information ></navigator>
       </view>
+      <image src='../images/curvedline.png' class='curvedline'></image>
     </view>
 
     <view class="btns">
       <view>
-        <navigator url="/page/bookings_index/bookings_index" open-type="switchTab">
-          <view class="bookings-btn text-center">Check Bookings</view>
+        <navigator url="/pages/bookings_new/bookings_new">
+          <view class="bookings-btn text-center"><image src='../images/addlist.png' class='addlist-icon'></image></view>
+          <view class="small-text">Create a list</view>
         </navigator> 
       </view>
-      <navigator url="" class="favourites text-center">Favourites</navigator>
+      <view>
+        <navigator url="">
+          <view class="favourites text-center"><image src='../images/hearticon.png' class='heart-icon'></image></view>
+          <view class="small-text">Favourites</view>
+        </navigator>
+      </view>
     </view>
   </view>
 
