@@ -4,14 +4,25 @@
     <image src='../images/kolowhite.png' class='logo'></image>
   </view>
 
+    <form bindsubmit="formSubmit">
+      <view class="searchbar">
+      <input name="search" class="search" placeholder-class=
+      "searchph" placeholder="Search..." />
+      <view class="submit-btn dflex-center" form-type="submit"><image src='../images/searchicon.png' class='search-icon'></image></view>
+      </view>
+    </form>
+
   <view class="room-index-container">
+
     <view wx:for="{{rooms}}" wx:for-item="room" wx:key="index"> 
       <navigator url="/pages/room_show/room_show?id={{room.id}}">
         <view class="venue-card"> 
             <view class="venue-img"style="background-image: url({{room.room_photo_url}})">        
             </view>
-          <view class="room-name">{{room.name}}</view>
-          <view class="room-price">CNY{{room.price}}</view>
+          <view class="name-price">
+            <view class="room-name">{{room.name}}</view>
+            <view class="room-price">CNY{{room.price}}</view>
+          </view>
         </view>   
       </navigator>
     </view>
