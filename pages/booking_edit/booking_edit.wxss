@@ -32,6 +32,7 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   position: relative;
  }
  
  .mb {
@@ -76,4 +77,20 @@ label {
   width: 40rpx;
   height: 32rpx;
   margin-right: 5rpx;
+}
+
+.delete-icon {
+  width: 32rpx;
+  height: 35rpx;
+}
+
+.d-btn {
+  color: #C23434;
+  right: 0;
+  position: absolute;
+  font-size: 35rpx;
+}
+
+.mt {
+  margin-top: 70rpx;
 }

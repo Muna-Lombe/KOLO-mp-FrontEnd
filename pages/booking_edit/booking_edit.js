@@ -19,6 +19,23 @@ Page({
    * Lifecycle function--Called when page load
    */
 
+  deleteData:function(){
+    console.log(this.data)
+    const id = Number.parseInt(this.data.roomId)
+    console.log(id)
+    wx.request({
+      url: `https://kolo-app.herokuapp.com/api/v1/rooms/${id}`,
+      method: "DELETE",
+      success(res) {
+        console.log("success")
+        console.log(res.data)
+        wx.navigateBack({
+          delta: 0,
+        })
+      }
+    })
+  },
+
   formSubmit:function(e){
     const data = e.detail.value
     // console.log("data-id",this.data)
