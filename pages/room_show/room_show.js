@@ -20,7 +20,8 @@ Page({
      console.log(userId)
      console.log(date)
      wx.request({
-      url: `https://kolo-app.herokuapp.com/api/v1/bookings/`,
+      // url: `https://kolo-app.herokuapp.com/api/v1/bookings/`,
+      url: `http://localhost:3000/api/v1/bookings/`,
       method: 'POST',
       data: {
         date: date,
@@ -40,17 +41,30 @@ Page({
   onLoad: function (options) {
     const page = this;
     wx.request({
-      url: `https://kolo-app.herokuapp.com/api/v1/rooms/${options.id}`,
+      // url: `https://kolo-app.herokuapp.com/api/v1/rooms/${options.id}`,
+      url: `http://localhost:3000/api/v1/rooms/${options.id}`,
       method: 'GET',
       success(res) {
         const room = res.data;
         console.log(room);
-        page.setData(
-          {room}
-        );
+        page.setData({
+          room,
+          default: room.users.length >= room.capacity
+        })
         wx.hideToast();
       }
     });
+    // const users = this.data.room.users
+    // const capacity = this.data.room.capacity
+    // if (users<capacity){
+    //     page.setData({
+    //       default: true
+    //     })
+    // }else{
+    //   page.setData({
+    //     default: false
+    //   })
+    // }
   },
 
 
@@ -58,14 +72,14 @@ Page({
    * Lifecycle function--Called when page is initially rendered
    */
   onReady: function () {
-
+    
   },
 
   /**
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    
   },
 
   /**
