@@ -14,7 +14,7 @@
 
     <view class="input-box">
       <label for="name">Name:</label>
-      <input name="name" class="name mb" placeholder="Event or venue name..." />
+      <input name="name" class="name mb" value = "{{name}}" placeholder="Event or venue name..." />
     </view>
 
     <view class="input-box">
@@ -24,27 +24,27 @@
 
     <view class="input-box">
       <label for="address">Location</label>
-      <input name="address" class="address mb" placeholder="Venue address..." />
+      <input name="address" class="address mb" value="{{address}}" placeholder="Venue address..." />
     </view>
 
     <view class="input-box">
       <label for="phone_number">Phone Number:</label>
-      <input name="phone_number" class="number mb" placeholder="Your phone number..." />
+      <input name="phone_number" class="number mb" value="{{phone_number}}" placeholder="Your phone number..." />
     </view>
 
     <view class="input-box">
       <label for="capacity">Capacity:</label>
-      <input name="capacity" class="capacity mb" placeholder="Number of people..." />
+      <input name="capacity" class="capacity mb" value="{{capacity}}" placeholder="Number of people..." />
     </view>
 
     <view class="input-box">
       <label>Description:</label>
-      <input name="description" class="description mb" placeholder="Description..." />
+      <input name="description" class="description mb" value="{{description}}" placeholder="Description..." />
     </view>
 
     <view class="input-box">
       <label>Price:</label>
-      <input name="price" class="price mb" placeholder="Put a price..." />
+      <input name="price" class="price mb" value="{{price}}" placeholder="Put a price..." />
     </view>
       
     <view class="add-img" bindtap="takePhoto"><image src='../images/uploadicon.png' class='upload-icon'></image>Upload an image</view>

@@ -8,6 +8,13 @@ Page({
 
   },
 
+  passData: function(e){
+    console.log(e)
+    const id = e.currentTarget.id
+    wx.navigateTo({
+      url: `/pages/bookings_new/bookings_new?id= ${id}`,
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */
