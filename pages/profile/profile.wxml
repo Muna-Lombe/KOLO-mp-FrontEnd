@@ -32,9 +32,11 @@
             <view class="posted">Posted: {{listing.date}}</view>
           </view>
           <!-- <navigator url= "" extra-data="{{listingData}}"> -->
-            <view class="btn text-center">
-              <text id="{{listing.id}}" bindtap = "passData">Edit</text>
+          <view class="edit-delete">
+            <view class="btn">
+              <view id="{{listing.id}}" bindtap = "passData">Edit <image src='../images/editicon.png' class='edit-icon'></image></view>
             </view>
+          </view>
           <!-- </navigator> -->
           
         </view>

@@ -95,6 +95,8 @@ body {
 }
 .name-date {
   margin-top: 40rpx;
+  width: 350rpx;
+  position: relative;
 }
 
 .listing-img {
@@ -123,15 +125,10 @@ body {
 }
 
 .btn {
-  padding: 8rpx 48rpx;
-  border-radius: 5px;
+  position: absolute;
   color:#3562A7;
-  border: 1px solid #3562A7;
-  margin-top: 140rpx;
-  margin-left: 100rpx;
-}
-
-.btn text {
+  bottom: 0;
+  right: 0;
   font-size: 35rpx;
 }
 
@@ -176,4 +173,17 @@ body {
 .make-listing {
   color: rgba(196,196,196,0.8);
 }
+
+.edit-icon {
+  width: 30rpx;
+  height: 30rpx;
+  background-size: cover;
+}
+
+.edit-delete {
+  width: 170rpx;
+  position: relative;
+}
+
+
 

@@ -10,9 +10,13 @@
   </view>
 
   <view class="form-container">
+    <view class="d-btn">
+      <view bindtap = "deleteData">Delete <image src='../images/deleteicon.png' class='delete-icon'></image></view>
+    </view>
+
     <form bindsubmit="formSubmit" >
     
-    <view class="input-box">
+    <view class="input-box mt">
       <label for="name">Name:</label>
       <input name="name" value = "{{name}}" class="name mb" placeholder="Event or venue name..." />
     </view>
@@ -46,7 +50,7 @@
       <label>Price:</label>
       <input name="price" value="{{price}}" class="price mb" placeholder="Put a price..." />
     </view>
-      
+    
     <view class="add-img mb" bindtap="takePhoto"><image src='../images/uploadicon.png' class='upload-icon'></image>Upload an image</view>
 
     <button class="submit-btn" form-type="submit">Submit Edit</button>
