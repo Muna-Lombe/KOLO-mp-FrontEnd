@@ -1,6 +1,6 @@
 /* pages/rooms_index/rooms_index.wxss */
 
-.body {
+body {
   font-family: Calibri, sans-serif
 }
 
@@ -41,6 +41,10 @@
   margin-left: 10px;
 }
 
+.name-price {
+  margin-top: 15rpx;
+}
+
 .searchbar {
   display: flex;
   justify-content: center;
@@ -68,7 +72,7 @@
 .submit-btn {
   height: 76rpx;
   width: 76rpx;
-  background-color: #232323;
+  background-image: linear-gradient(-60deg, #83c3d4, #61afc7);
   position: absolute;
   right: 0;
   border-radius: 0px 5px 5px 0px;
