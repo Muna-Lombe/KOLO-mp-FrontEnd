@@ -25,7 +25,7 @@ Page({
     console.log(id)
     wx.request({
       url: `https://kolo-app.herokuapp.com/api/v1/rooms/${id}`,
-      method: "DELETE",
+      method: 'DELETE',
       success(res) {
         console.log("success")
         console.log(res.data)
