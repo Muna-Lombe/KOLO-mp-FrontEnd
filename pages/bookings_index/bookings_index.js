@@ -1,4 +1,5 @@
 // pages/bookings_index/bookings_index.js
+let app = getApp()
 Page({
 
   /**
@@ -11,11 +12,19 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
+  toBookingShow:function(e){
+    // console.log(this.data.listings)
+    const id =e.currentTarget.id
+    wx.navigateTo({
+      url: `/pages/booking_show/booking_show?id= ${id}`,
+    })
+  },
   onLoad: function (options) {
     const page = this
     console.log(options)
+    const url = app.globalData.url
     wx.request({
-      url: `https://kolo-app.herokuapp.com/api/v1/users/1/profile`,
+      url: `${url}/api/v1/users/1/profile`,
       success(res) {
         console.log(res.data)
         const listings = res.data.bookings;
@@ -40,8 +49,9 @@ Page({
   onShow: function () {
     console.log("this.options",this.options)
     const page = this
+    const url = app.globalData.url
     wx.request({
-      url: `https://kolo-app.herokuapp.com/api/v1/users/1/profile`,
+      url: `${url}/api/v1/users/1/profile`,
       success(res) {
         console.log(res.data)
         const listings = res.data.bookings;

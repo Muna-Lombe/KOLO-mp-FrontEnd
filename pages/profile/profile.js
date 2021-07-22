@@ -1,4 +1,5 @@
 // pages/profile/profile.js
+let app = getApp()
 Page({
 
   /**
@@ -26,8 +27,9 @@ Page({
   },
 
   deleteData:function(){
+    const url = app.globalData.url
     wx.request({
-      url: `https://kolo-app.herokuapp.com/api/v1/rooms/${id}`,
+      url: `${url}/api/v1/rooms/${id}`,
       method: "DELETE",
       data: data,
       success(res) {
@@ -42,9 +44,10 @@ Page({
 
   onLoad: function (options) {
     const page = this
+    const url = app.globalData.url
     console.log(options)
     wx.request({
-      url: `https://kolo-app.herokuapp.com/api/v1/users/1/profile`,
+      url: `${url}/api/v1/users/1/profile`,
       success(res) {
         console.log(res.data)
         const listings = res.data.my_rooms;
