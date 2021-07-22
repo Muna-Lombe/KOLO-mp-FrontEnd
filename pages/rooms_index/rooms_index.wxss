@@ -1,11 +1,14 @@
 /* pages/rooms_index/rooms_index.wxss */
 
+.body {
+  font-family: Calibri, sans-serif
+}
+
 .room-index-container {
   width: 100%;
   margin: 23rpx;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-family: Calibri, sans-serif
 }
 
 .venue-card {
@@ -37,3 +40,49 @@
   opacity: .6;
   margin-left: 10px;
 }
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  height: 100rpx;
+  width: 705rpx;
+  margin-left: 23rpx;
+  margin-top: 40rpx;
+  position: relative;
+}
+
+.search {
+  background-color: rgb(240, 240, 240);
+  height: 76rpx;
+  width: 631rpx;
+  border-radius: 5px 0px 0px 5px;
+  position: absolute;
+  left: 0;
+}
+
+.search-icon {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.submit-btn {
+  height: 76rpx;
+  width: 76rpx;
+  background-color: #232323;
+  position: absolute;
+  right: 0;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.searchph {
+  margin-left: 20rpx;
+}
+
+.dflex-center {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
