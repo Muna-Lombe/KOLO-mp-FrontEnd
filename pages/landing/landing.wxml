@@ -1,2 +1,9 @@
 <!--pages/landing/landing.wxml-->
-<text>pages/landing/landing.wxml</text>
+
+<body>
+    <view class="landing-container">
+      <image src='../images/kolo.png' class='landing-logo'></image>
+    </view> 
+
+</body>
+
