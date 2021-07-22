@@ -25,6 +25,11 @@ body {
   left: 30rpx;
 }
 
+.back-icon {
+  width: 20rpx;
+  height: 38rpx;
+}
+
  /* form */
 
  .form-container {
