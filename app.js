@@ -5,14 +5,17 @@ App({
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    
 
     const that = this
     // 登录
     wx.login({
       success: res => {
         console.log(res)
+        const hurl = "https://kolo-app.herokuapp.com"
+        const lurl = "http://localhost:3000"
         wx.request({
-          url: 'https://kolo-app.herokuapp.com/api/v1/login',
+          url: `${hurl}/api/v1/login`,
           method: 'POST',
           data:{code:res.code},
           success(res){
@@ -45,6 +48,8 @@ App({
     // })
   },
   globalData: {
+    url:"https://kolo-app.herokuapp.com",
+    // url:"http://localhost:3000",
     userInfo:"",
     language: "EN",
     rooms: []

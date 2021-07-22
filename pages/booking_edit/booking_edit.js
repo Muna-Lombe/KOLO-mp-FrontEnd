@@ -1,4 +1,5 @@
 // pages/booking_edit/booking_edit.js
+let app = getApp()
 Page({
 
   /**
@@ -22,9 +23,11 @@ Page({
   deleteData:function(){
     console.log(this.data)
     const id = Number.parseInt(this.data.roomId)
+    const url = app.globalData.url
     console.log(id)
+
     wx.request({
-      url: `https://kolo-app.herokuapp.com/api/v1/rooms/${id}`,
+      url: `${url}/api/v1/rooms/${id}`,
       method: 'DELETE',
       success(res) {
         console.log("success")
@@ -41,8 +44,9 @@ Page({
     // console.log("data-id",this.data)
     const id = Number.parseInt(this.data.roomId)
     // console.log(id)
+    const url = app.globalData.url
     wx.request({
-      url: `https://kolo-app.herokuapp.com/api/v1/rooms/${id}`,
+      url: `${url}/api/v1/rooms/${id}`,
       method: "PUT",
       data: data,
       success(res) {
@@ -59,8 +63,9 @@ Page({
     const page = this
     console.log("options",options)
     const id = options.id
+    const url = app.globalData.url
     wx.request({
-      url: `https://kolo-app.herokuapp.com/api/v1/rooms/${options.id}`,
+      url: `${url}/api/v1/rooms/${options.id}`,
       success(res) {
         console.log(res.data)
         const listing = res.data;

@@ -1,4 +1,5 @@
 // pages/bookings_new/bookings_new.js
+let app = getApp()
 Page({
 
   /**
@@ -27,9 +28,10 @@ Page({
    formSubmit: function(e){
      const data = e.detail.value
      data.user_id = 1
+     const url = app.globalData.url
      console.log(data)
      wx.request({
-       url: 'https://kolo-app.herokuapp.com/api/v1/rooms',
+       url: `${url}/api/v1/rooms`,
        method: 'POST',
        data: data,
        success(res) {
