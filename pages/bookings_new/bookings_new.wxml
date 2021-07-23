@@ -55,12 +55,14 @@
 
         <view class="modal-container">
           <text>Booking confirmation is not performed by Kolo. By creating event listing, user is responsible for contacting venue directly to confirm booking and process payment.</text>
-          <view class="d-flex">
-            <view class="no-btn">
-              <view bindtap="hideModal">Cancel</view>
-            </view>
-            <view>
-              <button class="yes-btn" form-type="submit">Confirm</button>
+          <view class="confirm-cancel">
+            <view class="d-flex">
+              <view class="no-btn">
+                <view bindtap="hideModal">Cancel</view>
+              </view>
+              <view>
+                <button class="yes-btn" form-type="submit">Confirm</button>
+              </view>
             </view>
           </view>
         </view>

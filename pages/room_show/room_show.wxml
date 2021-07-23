@@ -32,8 +32,8 @@
         <view wx-if='{{showModal}}' class='modal-dialog'>
         <view class="modal-container">
           <view class="modal-text">By joining booking, user is responsible for verifying venue booking with group owner before making any payments to other users. Kolo does not process bookings or payments.</view>
-          <view class="d-flex">
-            <view class="confirm-cancel">
+          <view class="confirm-cancel">
+            <view class="d-flex">
               <view class="no-btn">
                 <view bindtap="hideModal">Cancel</view>
               </view>
