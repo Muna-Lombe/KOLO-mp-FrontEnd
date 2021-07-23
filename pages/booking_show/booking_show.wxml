@@ -26,21 +26,29 @@
   <!-- <view class="button-padding">
     <button bindtap="bookItem" class="btn" disabled="true">CNY {{room.price}}</button>
   </view> -->
-  <view>
-    <text>------------------- Comments --------------------</text>
+  <view class="comment-header">
+    <view class="comment-title">Comments</view>
   </view>
-  <view class="button-padding">
+
+  <view class="comment-container">
     <view>
       <view wx:for="{{comments}}" wx:for-item="comment" wx:key="index">
-        <view class="strong">Name: {{comment.name}}</view>
-        <view class="description font-smaller">Comment: {{comment.comment}}</view> 
+        <view class="border">
+          <view class="flexing">
+            <view class="avatar-name">
+              <image src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60' mode="aspectFill" class='avatar'></image>
+              <view class="" style="margin-left: 10rpx; color: white; font-size: 30rpx;">{{comment.name}}</view>
+            </view>
+              <view class="show-comment font-smaller">{{comment.comment}}</view> 
+          </view>
+        </view>
       </view>
     </view>
-    <view>
+
+    <view class="comment-submit">
       <form id="{{id}}" bindsubmit="formSubmit" >
         <view class="input-box">
-        <label for="comment">Comment</label>
-        <input name="comment" class="comment mb" placeholder="add comment...." />
+          <input name="comment" class="new-comment mb" placeholder-class="add-comment" placeholder="add comment...." />
         </view>
         <button class="submit-btn" form-type="submit">Submit</button>
       </form>
