@@ -32,7 +32,7 @@
 
   <view class="listing-container">
     <view wx:for="{{listings}}" wx:for-item="listing" wx:key="index"> 
-      <view class="listing">
+      <view id = "{{listing.id}}" bindtap="toRoomShow" class="listing">
         <view class="align-center">
           <image src='{{listing.room_photo_url}}' class='listing-img'></image>
         </view>
@@ -41,14 +41,11 @@
             <view class="strong name">{{listing.name}}</view>
             <view class="posted">Posted: {{listing.date}}</view>
           </view>
-          <!-- <navigator url= "" extra-data="{{listingData}}"> -->
           <view class="edit-delete">
             <view class="btn">
               <view id="{{listing.id}}" bindtap = "passData">Edit <image src='../images/editicon.png' class='edit-icon'></image></view>
             </view>
           </view>
-          <!-- </navigator> -->
-          
         </view>
       </view>
     </view>
