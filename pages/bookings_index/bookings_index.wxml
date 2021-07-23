@@ -17,7 +17,7 @@
           <view>
             <!-- <navigator url="/pages/bookings_new/bookings_new"> -->
               <button id= "{{listing.room_id}}" bindtap="passData" class="btn">
-                <text>Book Again</text>  
+                <view>Re-book</view> <image src='../images/bookagainicon.png' class='rebook-icon'></image>
               </button>
             <!-- </navigator> -->
           </view>
