@@ -68,7 +68,7 @@ Page({
           for(var j =0; j<my_rooms.length; j++){
             if (my_rooms[j].id == listings[i].room_id) {
               listings[i]["name"] = my_rooms[j].name;
-
+              listings[i]["price"] = my_rooms[j].price;
               // console.log(my_rooms[j].name)
             }
           };
