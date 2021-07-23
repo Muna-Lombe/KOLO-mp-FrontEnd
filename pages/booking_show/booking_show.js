@@ -18,56 +18,49 @@ Page({
      const date = this.data.room.date
      const userId = 1
      const url = app.globalData.url
-     console.log(roomId)
-     console.log(userId)
-     console.log(date)
-     wx.request({
-      // url: `https://kolo-app.herokuapp.com/api/v1/bookings/`,
-      url: `${url}/api/v1/bookings/`,
-      method: 'POST',
-      data: {
-        date: date,
-        room_id:roomId,
-        user_id:userId
-      },
-      success(res) {
-        const booking = res.data;
-        console.log(booking);
-        wx.hideToast();
-        wx.switchTab({
-          url: '/pages/bookings_index/bookings_index',
-        })
-      }
-    });
+    //  console.log(roomId)
+    //  console.log(userId)
+    //  console.log(date)
+    //  wx.request({
+    //   // url: `https://kolo-app.herokuapp.com/api/v1/bookings/`,
+    //   url: `${url}/api/v1/bookings/`,
+    //   method: 'POST',
+    //   data: {
+    //     date: date,
+    //     room_id:roomId,
+    //     user_id:userId
+    //   },
+    //   success(res) {
+    //     const booking = res.data;
+    //     console.log(booking);
+    //     wx.hideToast();
+    //     wx.switchTab({
+    //       url: '/pages/bookings_index/bookings_index',
+    //     })
+    //   }
+    // });
+   },
+   formSubmit:function(e){
+    console.log("e:",e)
    },
   onLoad: function (options) {
     const page = this;
     const url = app.globalData.url
+    // console.log(options)
     wx.request({
       // url: `https://kolo-app.herokuapp.com/api/v1/rooms/${options.id}`,
-      url: `${url}/api/v1/rooms/${options.id}`,
+      url: `${url}/api/v1/bookings/${options.id}`,
       method: 'GET',
       success(res) {
-        const room = res.data;
-        console.log(room);
+        const booking = res.data;
+        console.log("booking",booking);
+        const room = booking.room
         page.setData({
-          room,
-          default: room.users.length >= room.capacity
+          room
         })
         wx.hideToast();
       }
     });
-    // const users = this.data.room.users
-    // const capacity = this.data.room.capacity
-    // if (users<capacity){
-    //     page.setData({
-    //       default: true
-    //     })
-    // }else{
-    //   page.setData({
-    //     default: false
-    //   })
-    // }
   },
 
 

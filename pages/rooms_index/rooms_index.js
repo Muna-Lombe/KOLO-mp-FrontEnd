@@ -14,9 +14,10 @@ Page({
    */
   onLoad: function (options) {
     const page = this;
+    const url = app.globalData.url
     console.log("page loaded")
     wx.request({
-      url: 'https://kolo-app.herokuapp.com/api/v1/rooms',
+      url: `${url}/api/v1/rooms`,
       method: 'GET',
       success(res) {
         console.log(res)

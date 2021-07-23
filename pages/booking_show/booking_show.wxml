@@ -23,8 +23,25 @@
   </view>
 
         <!-- change this to real button -->
-  <view class="button-padding">
-        <button bindtap="bookItem" class="btn" disabled="{{default}}">CNY {{room.price}}</button>
+  <!-- <view class="button-padding">
+    <button bindtap="bookItem" class="btn" disabled="true">CNY {{room.price}}</button>
+  </view> -->
+  <view>
+    <text>------------------- Comments --------------------</text>
   </view>
+  <view class="button-padding">
+    <form bindsubmit="formSubmit" >
+      <view class="input-box">
+        <label for="comment">Add my Routes to FIX ME!!</label>
+        <input name="comment" class="comment mb" placeholder="I can't post a comment yet" />
+      </view>
+      <button class="submit-btn" form-type="submit">Submit</button>
+    </form>
+  </view>
+  <view class="button-padding">
+    <view class="capacity font-smaller"><view class="strong">NAME:</view>cOMMENTOR-NAME</view>
+    <view class="description font-smaller">COMMENT-CONTENTCOMMENT-CONTENTCOMMENT-CONTENTCOMMENT-CONTENTCOMMENT-CONTENT</view>
+  </view>
+  
 
 </body>

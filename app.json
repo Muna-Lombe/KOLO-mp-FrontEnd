@@ -5,13 +5,14 @@
     "pages/landing/landing",
     "pages/profile/profile",
     "pages/rooms_index/rooms_index",
+    "pages/booking_show/booking_show",
     "pages/room_show/room_show",
     "pages/bookings_index/bookings_index",
     "pages/bookings_new/bookings_new",
     "pages/booking_edit/booking_edit"
   ],
   "tabBar": {
-    "selectedColor":"#3562A7",
+    "selectedColor":"#8EC4D2",
     "list": [{
       "pagePath": "pages/rooms_index/rooms_index",
       "text": "Home",

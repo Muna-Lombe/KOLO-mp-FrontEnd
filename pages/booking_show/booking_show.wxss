@@ -1,0 +1,105 @@
+/* pages/room_show/room_show.wxss */
+
+.navbar-back {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.back {
+  color: white;
+  margin: 10rpx;
+  position: absolute;
+  top: 100rpx;
+  left: 30rpx;
+}
+
+.back-icon {
+  width: 20rpx;
+  height: 38rpx;
+}
+
+.venue-img {
+  width: 100%;
+  height: 400rpx;
+  background-size: cover;
+  margin-top: -20px;
+}
+
+.info-container {
+  padding: 10px;
+  font-family: Calibri, sans-serif;
+  margin-bottom: 15rpx;
+}
+
+.venue-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+
+.venue-address {
+  width: 200px;
+  margin: 5px 0px;
+}
+
+.location-icon {
+  width: 72rpx;
+  height: 90rpx;
+  margin-top: 10px;
+}
+
+.phone {
+  font-size: 12px;
+  font-weight: bold;
+  color: #3562A7;
+  margin: 10px 0px;
+}
+
+.capacity {
+  margin: 20px 0px;
+}
+
+.description {
+  margin: 20px 0px;
+}
+
+.name-button-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-padding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.btn {
+  background-color: #232323;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+
+/* global uses */
+
+.font-smaller {
+  font-size: 13px;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+
