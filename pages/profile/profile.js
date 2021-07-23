@@ -16,6 +16,15 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
+
+  toRoomShow:function(e){
+    console.log(e)
+    const id =e.currentTarget.id
+    wx.navigateTo({
+      url: `/pages/room_show/room_show?id= ${id}`,
+    })
+  },
+
   passData: function(e){
     console.log(e.currentTarget.id)
     const id = e.currentTarget.id
