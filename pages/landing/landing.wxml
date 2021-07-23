@@ -8,9 +8,10 @@
       <text>Find friends, book locations, share costs</text>
     </view>
 
-      <navigator url="" class="wechat-btn">
-      <view class="login-btn"><image src='../images/wechaticon.png' class='wechat-icon'></image> <text> Login</text></view>
-      </navigator>
+ <button bindtap="getUserProfile" >Login</button> 
+      <!-- < navigator url="" class="wechat-btn"> -->
+      <!-- <view class="login-btn"><image src='../images/wechaticon.png' class='wechat-icon'></image> <text> Login</text></view> -->
+      <!-- </navigator> --> 
     </view> 
 
 </body>

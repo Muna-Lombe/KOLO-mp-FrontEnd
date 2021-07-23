@@ -50,6 +50,7 @@ App({
   globalData: {
     url:"https://kolo-app.herokuapp.com",
     // url:"http://localhost:3000",
+    userProfile:"",
     userInfo:"",
     language: "EN",
     rooms: []

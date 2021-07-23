@@ -1,4 +1,5 @@
 // pages/landing/landing.js
+// let userprofile = getApp().globalData.userProfile
 Page({
 
   /**
@@ -7,7 +8,17 @@ Page({
   data: {
 
   },
-
+  getUserProfile: function(e) {
+    wx.getUserProfile({
+      desc:'Get User Profile',
+      success: (res) => {
+        console.log(res);
+        wx.switchTab({
+          url: '/pages/rooms_index/rooms_index',
+        })
+      },
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */
