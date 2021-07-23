@@ -37,7 +37,7 @@ Page({
       sourceType: ['album', 'camera'],
       success: function (res) {
         var tempFilePaths = res.tempFilePaths
-        console.log(tempFilePaths)
+        // console.log(tempFilePaths)
       }
     })
   },
@@ -50,13 +50,13 @@ Page({
      const data = e.detail.value
      data.user_id = 1
      const url = app.globalData.url
-     console.log(data)
+    //  console.log(data)
      wx.request({
        url: `${url}/api/v1/rooms`,
        method: 'POST',
        data: data,
        success(res) {
-         console.log(res)
+        //  console.log(res)
        }
      })
     wx.switchTab({
@@ -65,12 +65,12 @@ Page({
    },
   onLoad: function (options) {
     const page = this
-    console.log("options",options)
+    // console.log("options",options)
     const id = options.id
     wx.request({
       url: `https://kolo-app.herokuapp.com/api/v1/rooms/${options.id}`,
       success(res) {
-        console.log(res.data)
+        // console.log(res.data)
         const listing = res.data;
         page.setData({
         roomId:id,

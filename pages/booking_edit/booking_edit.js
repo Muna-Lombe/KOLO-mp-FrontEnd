@@ -36,17 +36,17 @@ Page({
     },  
 
   deleteData:function(){
-    console.log(this.data)
+    // console.log(this.data)
     const id = Number.parseInt(this.data.roomId)
     const url = app.globalData.url
-    console.log(id)
+    // console.log(id)
 
     wx.request({
       url: `${url}/api/v1/rooms/${id}`,
       method: 'DELETE',
       success(res) {
-        console.log("success")
-        console.log(res.data)
+        // console.log("success")
+        // console.log(res.data)
         wx.navigateBack({
           delta: 0,
         })
@@ -65,8 +65,8 @@ Page({
       method: "PUT",
       data: data,
       success(res) {
-        console.log("success")
-        console.log(res.data)
+        // console.log("success")
+        // console.log(res.data)
         wx.navigateBack({
           delta: 1,
         })
@@ -76,13 +76,13 @@ Page({
 
   onLoad: function (options) {
     const page = this
-    console.log("options",options)
+    // console.log("options",options)
     const id = options.id
     const url = app.globalData.url
     wx.request({
       url: `${url}/api/v1/rooms/${options.id}`,
       success(res) {
-        console.log(res.data)
+        // console.log(res.data)
         const listing = res.data;
         page.setData({
         roomId:id,

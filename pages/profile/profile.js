@@ -18,7 +18,7 @@ Page({
    */
 
   toRoomShow:function(e){
-    console.log(e)
+    // console.log(e)
     const id =e.currentTarget.id
     wx.navigateTo({
       url: `/pages/room_show/room_show?id= ${id}`,
@@ -26,9 +26,9 @@ Page({
   },
 
   passData: function(e){
-    console.log(e.currentTarget.id)
+    // console.log(e.currentTarget.id)
     const id = e.currentTarget.id
-    console.log(this.data.listings[id-1])
+    // console.log(this.data.listings[id-1])
     const listingData = this.data.listings[id-1]
     wx.navigateTo({
       url: `/pages/booking_edit/booking_edit?id= ${id}`,
@@ -42,8 +42,8 @@ Page({
       method: "DELETE",
       data: data,
       success(res) {
-        console.log("success")
-        console.log(res.data)
+        // console.log("success")
+        // console.log(res.data)
         wx.navigateBack({
           delta: 0,
         })
@@ -53,18 +53,18 @@ Page({
 
   onLoad: function (options) {
     const user = app.globalData.userProfile
-    console.log("user",user)
+    // console.log("user",user)
     const name= user.nickName
     const avatar = user.avatarUrl
     const page = this
     const url = app.globalData.url
-    console.log(options)
+    // console.log(options)
     wx.request({
       url: `${url}/api/v1/users/1/profile`,
       success(res) {
-        console.log(res.data)
+        // console.log(res.data)
         const listings = res.data.my_rooms;
-        console.log(listings)
+        // console.log(listings)
         page.setData({
           listings: listings,
           name:name,
