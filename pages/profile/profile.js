@@ -58,9 +58,11 @@ Page({
     const avatar = user.avatarUrl
     const page = this
     const url = app.globalData.url
-    // console.log(options)
+    const userinfo = app.globalData.userInfo
+    console.log("userinf:",userinfo)
+    console.log(options)
     wx.request({
-      url: `${url}/api/v1/users/1/profile`,
+      url: `${url}/api/v1/users/${userinfo.id}/profile`,
       success(res) {
         // console.log(res.data)
         const listings = res.data.my_rooms;
