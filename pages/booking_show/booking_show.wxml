@@ -39,8 +39,8 @@
     <view>
       <form id="{{id}}" bindsubmit="formSubmit" >
         <view class="input-box">
-        <label for="comment">Add my Routes to FIX ME!!</label>
-        <input name="comment" class="comment mb" placeholder="I can't post a comment yet" />
+        <label for="comment">Comment</label>
+        <input name="comment" class="comment mb" placeholder="add comment...." />
         </view>
         <button class="submit-btn" form-type="submit">Submit</button>
       </form>

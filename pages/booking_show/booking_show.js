@@ -12,34 +12,7 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-
-   bookItem: function(e){
-     const roomId = this.data.room.id
-     const date = this.data.room.date
-     const userId = 1
-     const url = app.globalData.url
-    //  console.log(roomId)
-    //  console.log(userId)
-    //  console.log(date)
-    //  wx.request({
-    //   // url: `https://kolo-app.herokuapp.com/api/v1/bookings/`,
-    //   url: `${url}/api/v1/bookings/`,
-    //   method: 'POST',
-    //   data: {
-    //     date: date,
-    //     room_id:roomId,
-    //     user_id:userId
-    //   },
-    //   success(res) {
-    //     const booking = res.data;
-    //     console.log(booking);
-    //     wx.hideToast();
-    //     wx.switchTab({
-    //       url: '/pages/bookings_index/bookings_index',
-    //     })
-    //   }
-    // });
-   },
+   
    formSubmit:function(e){
     // console.log("e:",e)
     const url = app.globalData.url
@@ -48,12 +21,14 @@ Page({
     const date = new Date().toDateString()
 
     const comment = {date:date, name:"Muha", comment:content, booking_id: id }
+    const that = this
     wx.request({
       url: `${url}/api/v1/bookings/${id}`,
       method: 'POST',
       data:{comment:comment},
       success(res){
-        console.log(res)
+        // console.log(res)
+        that.onLoad(that.options)
       }
     })
 
@@ -61,14 +36,14 @@ Page({
   onLoad: function (options) {
     const page = this;
     const url = app.globalData.url
-    console.log(options)
+    // console.log(options)
     wx.request({
       // url: `https://kolo-app.herokuapp.com/api/v1/rooms/${options.id}`,
       url: `${url}/api/v1/bookings/${options.id}`,
       method: 'GET',
       success(res) {
         const booking = res.data;
-        console.log("booking",booking);
+        // console.log("booking",booking);
         const room = booking.room
         const comments = booking.comment
         page.setData({

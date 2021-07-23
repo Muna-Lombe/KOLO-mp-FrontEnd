@@ -10,7 +10,6 @@ Page({
   },
 
   passData: function(e){
-    console.log(e)
     const id = e.currentTarget.id
     wx.navigateTo({
       url: `/pages/bookings_new/bookings_new?id= ${id}`,
@@ -28,14 +27,14 @@ Page({
   },
   onLoad: function (options) {
     const page = this
-    console.log(options)
+    // console.log(options)
     const url = app.globalData.url
     wx.request({
       url: `${url}/api/v1/users/1/profile`,
       success(res) {
-        console.log(res.data)
+        // console.log(res.data)
         const listings = res.data.bookings;
-        console.log(listings)
+        // console.log(listings)
         page.setData({
           listings: listings
         })
@@ -54,16 +53,16 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-    console.log("this.options",this.options)
+    // console.log("this.options",this.options)
     const page = this
     const url = app.globalData.url
     wx.request({
       url: `${url}/api/v1/users/1/profile`,
       success(res) {
-        console.log(res.data)
+        // console.log(res.data)
         const listings = res.data.bookings;
         const my_rooms = res.data.my_rooms;
-        console.log(listings);
+        // console.log(listings);
         for(var i =0; i<listings.length; i++){
           for(var j =0; j<my_rooms.length; j++){
             if (my_rooms[j].id == listings[i].room_id) {
@@ -73,7 +72,7 @@ Page({
             }
           };
         };
-        console.log(listings)
+        // console.log(listings)
 
         page.setData({
           listings: listings

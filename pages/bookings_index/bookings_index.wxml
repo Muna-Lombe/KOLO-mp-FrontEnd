@@ -7,7 +7,7 @@
 
   <view class="booking-container">
     <view wx:for="{{listings}}" wx:for-item="listing" wx:key="index">
-      <view bindtap= "toBookingShow" class="booking">
+      <view id= "{{listing.room_id}}" bindtap= "toBookingShow" class="booking">
         <view class="name-date">
           <view class="strong name">{{listing.name}}</view>
           <view>{{listing.date}}</view>
