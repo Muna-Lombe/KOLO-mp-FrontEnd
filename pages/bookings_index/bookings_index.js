@@ -52,10 +52,22 @@ Page({
       success(res) {
         console.log(res.data)
         const listings = res.data.bookings;
-        console.log(listings)
-        page.setData({
-          listings: listings
-        })
+        const my_rooms = res.data.my_rooms;
+        console.log(listings);
+        for(var i =0; i<listings.length; i++){
+          for(var j =0; j<my_rooms.length; j++){
+            if (my_rooms[j].id == listings[i].room_id) {
+              listings[i]["name"] = my_rooms[j].name;
+
+              console.log(listings[i]["name"])
+              // console.log(my_rooms[j].name)
+            }
+          };
+        };
+        // page.setData({
+        //   listings: listings,
+        //   my_rooms: my_rooms
+        // })
       }
     })
   },

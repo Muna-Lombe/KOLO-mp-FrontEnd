@@ -5,7 +5,7 @@
     </view>
 
     <view class="booking-container">
-      <view wx:for="{{listings}}" wx:for-item="listing" wx:key="index">
+      <view wx:for="{{listings}} " wx:for-item="listing" wx:key="index">
         <view class="booking">
           <view class="name-date">
             <view class="strong name">{{listing.name}}</view>
