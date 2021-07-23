@@ -1,5 +1,5 @@
 // pages/landing/landing.js
-// let userprofile = getApp().globalData.userProfile
+// getApp().globalData.userProfile
 Page({
 
   /**
@@ -13,6 +13,9 @@ Page({
       desc:'Get User Profile',
       success: (res) => {
         console.log(res);
+        const userdata = res.userInfo;
+        console.log(userdata)
+        getApp().globalData.userProfile = userdata;
         wx.switchTab({
           url: '/pages/rooms_index/rooms_index',
         })
