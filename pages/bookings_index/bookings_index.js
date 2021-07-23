@@ -21,8 +21,9 @@ Page({
   toBookingShow:function(e){
     // console.log(this.data.listings)
     const id =e.currentTarget.id
+    console.log(e.currentTarget.id)
     wx.navigateTo({
-      url: `/pages/booking_show/booking_show?id= ${id-1}`,
+      url: `/pages/booking_show/booking_show?id= ${id}`,
     })
   },
   onLoad: function (options) {
@@ -31,9 +32,9 @@ Page({
     const url = app.globalData.url
     const userinfo = app.globalData.userInfo
     wx.request({
-      url: `${url}/api/v1/users/1/profile`,
+      url: `${url}/api/v1/users/${userinfo.id}/profile`,
       success(res) {
-        // console.log(res.data)
+        console.log("result",res.data)
         const listings = res.data.bookings;
         // console.log(listings)
         page.setData({
@@ -59,9 +60,9 @@ Page({
     const url = app.globalData.url
     const userinfo = app.globalData.userInfo
     wx.request({
-      url: `${url}/api/v1/users/1/profile`,
+      url: `${url}/api/v1/users/${userinfo.id}/profile`,
       success(res) {
-        // console.log(res.data)
+        console.log(res.data)
         const listings = res.data.bookings;
         const my_rooms = res.data.my_rooms;
         // console.log(listings);
