@@ -6,7 +6,14 @@ Page({
    * Page initial data
    */
   data: {
-
+    roomId:"",
+    name:"",
+    address:"",
+    description:"",
+    date:"",
+    capacity:"",
+    price:"",
+    phone_number:""
   },
 
   takePhoto: function() {
@@ -43,7 +50,25 @@ Page({
     })
    },
   onLoad: function (options) {
-
+    const page = this
+    console.log("options",options)
+    const id = options.id
+    wx.request({
+      url: `https://kolo-app.herokuapp.com/api/v1/rooms/${options.id}`,
+      success(res) {
+        console.log(res.data)
+        const listing = res.data;
+        page.setData({
+        roomId:id,
+        name:listing.name,
+        address:listing.address,
+        description:listing.description,
+        capacity:listing.capacity,
+        price:listing.price,
+        phone_number:listing.phone_number
+        })
+      }
+    })
   },
 
   /**
