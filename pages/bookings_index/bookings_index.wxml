@@ -1,33 +1,34 @@
 <!--pages/bookings_index/bookings_index.wxml-->
-  <body>
-    <view class="navbar">
-      <view class="booking-header">Bookings</view>
+<body>
+  <view class="navbar">
+    <view class="booking-header">Bookings</view>
+  </view>
+
+
+  <view class="booking-container">
+    <view wx:for="{{listings}}" wx:for-item="listing" wx:key="index">
+      <view class="booking">
+        <view class="name-date">
+          <view class="strong name">{{listing.name}}</view>
+          <view>{{listing.date}}</view>
+        </view>
+        <view class="price-book">
+          <view class="price">CNY700</view>
+          <view>
+            <!-- <navigator url="/pages/bookings_new/bookings_new"> -->
+              <button id= "{{listing.room_id}}" bindtap="passData" class="btn">
+                <text>Book Again</text>  
+              </button>
+            <!-- </navigator> -->
+          </view>
+        </view>
+      </view>
+
     </view>
 
-    <view class="booking-container">
-      <view wx:for="{{listings}} " wx:for-item="listing" wx:key="index">
-        <view class="booking">
-          <view class="name-date">
-            <view class="strong name">{{listing.name}}</view>
-            <view>{{listing.date}}</view>
-          </view>
-          <view class="price-book">
-            <view class="price">CNY700</view>
-            <view>
-              <!-- <navigator url="/pages/bookings_new/bookings_new"> -->
-                <button id= "{{listing.room_id}}" bindtap="passData" class="btn">
-                  <text>Book Again</text>  
-                </button>
-              <!-- </navigator> -->
-            </view>
-          </view>
-      </view>
+  </view>
     
-    </view>
-
-      </view>
-      
 
 
-  </body>
+</body>
 
