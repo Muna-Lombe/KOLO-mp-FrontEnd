@@ -45,10 +45,18 @@ body {
  }
 
  .submit-btn {
-   margin-top: 50rpx;
-   background-color: #232323;
-   color: white;
- }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50rpx;
+  background-color: #232323;
+  color: white;
+  width: 100%;
+  height: 80rpx;
+  border-radius: 5px;
+  font-size: 40rpx;
+}
 
  input {
   margin-top: 15rpx;
