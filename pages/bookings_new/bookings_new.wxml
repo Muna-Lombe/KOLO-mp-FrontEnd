@@ -52,7 +52,7 @@
     <view bindtap="openModal" class="submit-btn">Submit</view>
         <view wx-if='{{showModal}}' class='modal-mask' bindtap='hideModal' catchtouchmove='preventTouchMove'></view>
         <view wx-if='{{showModal}}' class='modal-dialog'>
-        
+
         <view class="modal-container">
           <text>Booking confirmation is not performed by Kolo. By creating event listing, user is responsible for contacting venue directly to confirm booking and process payment.</text>
           <view class="d-flex">

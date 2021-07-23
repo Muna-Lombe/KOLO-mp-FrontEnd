@@ -9,7 +9,8 @@
     </view>
   </view>
 
-  <view class="venue-img" style="background-image: url({{room.room_photo_url}})"></view>
+  <view class="show-container">
+    <view class="venue-img" style="background-image: url({{room.room_photo_url}})"></view>
 
   <view class="info-container">
     <view class="venue-name">{{room.name}}</view>
@@ -23,8 +24,24 @@
   </view>
 
         <!-- change this to real button -->
-  <view class="button-padding">
-        <button bindtap="bookItem" class="btn" disabled="{{default}}">CNY {{room.price}}</button>
-  </view>
+
+      <view class="button-padding">
+        <view bindtap="openModal" disabled="{{default}}" class="btn">Book: CNY{{room.price}}</view>
+      </view>
+        <view wx-if='{{showModal}}' class='modal-mask' bindtap='hideModal' catchtouchmove='preventTouchMove'></view>
+        <view wx-if='{{showModal}}' class='modal-dialog'>
+        <view class="modal-container">
+          <view class="modal-text">By joining booking, user is responsible for verifying venue booking with group owner before making any payments to other users. Kolo does not process bookings or payments.</view>
+          <view class="d-flex">
+            <view class="no-btn">
+              <view bindtap="hideModal">Cancel</view>
+            </view>
+            <view>
+              <button class="yes-btn" bindtap="bookItem">Confirm</button>
+            </view>
+          </view>
+        </view>
+     </view>
+    </view>
 
 </body>
