@@ -49,7 +49,8 @@ Page({
         page.setData({
           room,
           comments,
-          id:options.id
+          id:options.id,
+          commentSect: ""
         })
         wx.hideToast();
       }
