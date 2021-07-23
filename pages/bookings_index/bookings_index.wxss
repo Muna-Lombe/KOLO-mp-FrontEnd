@@ -46,7 +46,7 @@
 .btn {
   background-color:#8fcddf;
   color: white;
-  width: 260rpx !important;
+  width: 280rpx !important;
   height: 70rpx;
   display: flex;
   justify-content: center;
