@@ -6,12 +6,26 @@ Page({
    * Page initial data
    */
   data: {
-    
+    showModal: false,
   },
 
   /**
    * Lifecycle function--Called when page load
    */
+
+
+  openModal: function() {
+    this.setData({
+      showModal: true,
+    })
+    
+  },
+
+    hideModal: function() {
+      this.setData({
+        showModal: false,
+      })
+    },  
 
    bookItem: function(e){
      const roomId = this.data.room.id
@@ -40,6 +54,7 @@ Page({
       }
     });
    },
+
   onLoad: function (options) {
     const page = this;
     const url = app.globalData.url
