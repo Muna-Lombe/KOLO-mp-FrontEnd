@@ -43,6 +43,10 @@ Page({
   },
 
   onLoad: function (options) {
+    const user = app.globalData.userProfile
+    console.log("user",user)
+    const name= user.nickName
+    const avatar = user.avatarUrl
     const page = this
     const url = app.globalData.url
     console.log(options)
@@ -53,7 +57,9 @@ Page({
         const listings = res.data.my_rooms;
         console.log(listings)
         page.setData({
-          listings: listings
+          listings: listings,
+          name:name,
+          avatar:avatar
         })
       }
     })
