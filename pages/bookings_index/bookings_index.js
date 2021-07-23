@@ -29,6 +29,7 @@ Page({
     const page = this
     // console.log(options)
     const url = app.globalData.url
+    const userinfo = app.globalData.userInfo
     wx.request({
       url: `${url}/api/v1/users/1/profile`,
       success(res) {
@@ -56,6 +57,7 @@ Page({
     // console.log("this.options",this.options)
     const page = this
     const url = app.globalData.url
+    const userinfo = app.globalData.userInfo
     wx.request({
       url: `${url}/api/v1/users/1/profile`,
       success(res) {
