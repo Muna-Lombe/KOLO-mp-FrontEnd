@@ -48,7 +48,7 @@
     <view class="comment-submit">
       <form id="{{id}}" bindsubmit="formSubmit" >
         <view class="input-box">
-          <input name="comment" class="new-comment mb" placeholder-class="add-comment" placeholder="add comment...." />
+          <input name="comment" value = "{{commentSect}}" class="new-comment mb" placeholder-class="add-comment" placeholder="add comment...." />
         </view>
         <button class="submit-btn" form-type="submit">Submit</button>
       </form>

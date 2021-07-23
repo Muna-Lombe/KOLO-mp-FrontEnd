@@ -22,7 +22,7 @@ Page({
     // console.log(this.data.listings)
     const id =e.currentTarget.id
     wx.navigateTo({
-      url: `/pages/booking_show/booking_show?id= ${id}`,
+      url: `/pages/booking_show/booking_show?id= ${id-1}`,
     })
   },
   onLoad: function (options) {
