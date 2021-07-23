@@ -62,7 +62,7 @@ Page({
     console.log("userinf:",userinfo)
     console.log(options)
     wx.request({
-      url: `${url}/api/v1/users/${userinfo.id}/profile`,
+      url: `${url}/api/v1/users/1/profile`,
       success(res) {
         // console.log(res.data)
         const listings = res.data.my_rooms;
