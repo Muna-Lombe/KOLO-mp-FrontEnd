@@ -5,13 +5,18 @@
       <image src='../images/kolo.png' class='landing-logo'></image>
 
     <view class="slogan">
-      <text>Find friends, book locations, share costs</text>
+      <view><text class="strong-color">Find</text> friends, <text class="strong-color">book</text> locations, <text class="strong-color">share</text> costs</view>
     </view>
 
- <button bindtap="getUserProfile" >Login</button> 
+    <button bindtap="getUserProfile" class="wechat-btn login-btn" style="z-index:9;">
+      <image src='../images/wechaticon.png' class='wechat-icon'></image>
+      Login
+    </button> 
       <!-- < navigator url="" class="wechat-btn"> -->
       <!-- <view class="login-btn"><image src='../images/wechaticon.png' class='wechat-icon'></image> <text> Login</text></view> -->
       <!-- </navigator> --> 
+
+    <image src='../images/landingbackground.png' class='landing-img' style="z-index:8;"></image>
     </view> 
 
 </body>

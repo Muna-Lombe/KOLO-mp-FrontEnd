@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   font-family: Calibri, sans-serif;
+  position: relative;
 }
 
 .landing-logo {
@@ -19,7 +20,8 @@
 .wechat-btn {
   background-image: linear-gradient(-240deg, #51C332, #47A82C);
   /* background-color: #51C332; */
-  padding: 16rpx 50rpx;
+  height: 75rpx !important;
+  width: 250rpx !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,17 +29,34 @@
   margin-top: 150rpx;
 }
 
+.login-btn:hover {
+  opacity: .8;
+}
+
 .wechat-icon {
   width: 50rpx;
   height: 40rpx;
+  margin-right: 10rpx;
 }
 
-.login-btn text {
+.login-btn {
   color: white;
   font-size: 30rpx;
 }
 
 .slogan {
   margin-top: 20rpx;
-  opacity: .7;
+}
+
+.strong-color {
+  font-weight: bold;
+  color: #77c3d8;
+}
+
+.landing-img {
+  width: 828rpx;
+  height: 800rpx;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
