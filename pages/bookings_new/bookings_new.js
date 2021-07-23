@@ -6,8 +6,21 @@ Page({
    * Page initial data
    */
   data: {
-
+    showModal: false
   },
+
+  openModal: function() {
+    this.setData({
+      showModal: true,
+    })
+    
+  },
+
+    hideModal: function() {
+      this.setData({
+        showModal: false,
+      })
+    },  
 
   takePhoto: function() {
     wx.chooseImage({

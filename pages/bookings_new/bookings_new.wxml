@@ -49,7 +49,22 @@
       
     <view class="add-img" bindtap="takePhoto"><image src='../images/uploadicon.png' class='upload-icon'></image>Upload an image</view>
 
-    <view class="submit-btn" form-type="submit">Submit</view>
+    <view bindtap="openModal" class="submit-btn">Submit</view>
+        <view wx-if='{{showModal}}' class='modal-mask' bindtap='hideModal' catchtouchmove='preventTouchMove'></view>
+        <view wx-if='{{showModal}}' class='modal-dialog'>
+        
+        <view class="modal-container">
+          <text>Booking confirmation is not performed by Kolo. By creating event listing, user is responsible for contacting venue directly to confirm booking and process payment.</text>
+          <view class="d-flex">
+            <view class="no-btn">
+              <view bindtap="hideModal">Cancel</view>
+            </view>
+            <view>
+              <button class="yes-btn" form-type="submit">Confirm</button>
+            </view>
+          </view>
+        </view>
+     </view>
 
     </form>
     </view>
