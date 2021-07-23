@@ -11,8 +11,23 @@
 
   <view class="form-container">
     <view class="d-btn">
-      <view bindtap = "deleteData">Delete <image src='../images/deleteicon.png' class='delete-icon'></image></view>
+      <view bindtap = "openModal">Delete <image src='../images/deleteicon.png' class='delete-icon'></image></view>
     </view>
+        <view wx-if='{{showModal}}' class='modal-mask' bindtap='hideModal' catchtouchmove='preventTouchMove'></view>
+        <view wx-if='{{showModal}}' class='modal-dialog'>
+      <view class="modal-container">
+        <text>Are you sure you want to delete this listing?</text>
+        <view class="d-flex">
+          <view class="no-btn">
+            <view bindtap="hideModal">Cancel</view>
+          </view>
+          <view class="yes-btn">
+            <view bindtap="deleteData">Delete</view>
+          </view>
+        </view>
+      </view>
+     </view>
+
 
     <form bindsubmit="formSubmit" >
     

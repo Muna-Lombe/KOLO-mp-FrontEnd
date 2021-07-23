@@ -13,12 +13,27 @@ Page({
         date:"",
         capacity:"",
         price:"",
-        phone_number:""
+        phone_number:"",
+        showModal: false
   },
 
   /**
    * Lifecycle function--Called when page load
    */
+
+
+  openModal: function() {
+    this.setData({
+      showModal: true,
+    })
+    
+  },
+
+    hideModal: function() {
+      this.setData({
+        showModal: false,
+      })
+    },  
 
   deleteData:function(){
     console.log(this.data)
