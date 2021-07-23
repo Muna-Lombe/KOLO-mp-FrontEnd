@@ -30,17 +30,22 @@
     <text>------------------- Comments --------------------</text>
   </view>
   <view class="button-padding">
-    <form bindsubmit="formSubmit" >
-      <view class="input-box">
+    <view>
+      <view wx:for="{{comments}}" wx:for-item="comment" wx:key="index">
+        <view class="strong">Name: {{comment.name}}</view>
+        <view class="description font-smaller">Comment: {{comment.comment}}</view> 
+      </view>
+    </view>
+    <view>
+      <form id="{{id}}" bindsubmit="formSubmit" >
+        <view class="input-box">
         <label for="comment">Add my Routes to FIX ME!!</label>
         <input name="comment" class="comment mb" placeholder="I can't post a comment yet" />
-      </view>
-      <button class="submit-btn" form-type="submit">Submit</button>
-    </form>
-  </view>
-  <view class="button-padding">
-    <view class="capacity font-smaller"><view class="strong">NAME:</view>cOMMENTOR-NAME</view>
-    <view class="description font-smaller">COMMENT-CONTENTCOMMENT-CONTENTCOMMENT-CONTENTCOMMENT-CONTENTCOMMENT-CONTENT</view>
+        </view>
+        <button class="submit-btn" form-type="submit">Submit</button>
+      </form>
+    </view>
+    
   </view>
   
 
