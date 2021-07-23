@@ -53,7 +53,7 @@
     
     <view class="add-img mb" bindtap="takePhoto"><image src='../images/uploadicon.png' class='upload-icon'></image>Upload an image</view>
 
-    <button class="submit-btn" form-type="submit">Submit Edit</button>
+    <view class="submit-btn" form-type="submit">Submit Edit</view>
 
     </form>
     </view>
