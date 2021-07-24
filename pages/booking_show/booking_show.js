@@ -36,10 +36,11 @@ Page({
   onLoad: function (options) {
     const page = this;
     const url = app.globalData.url
+    const bookingId = options.id
     console.log(options)
     wx.request({
       // url: `https://kolo-app.herokuapp.com/api/v1/rooms/${options.id}`,
-      url: `${url}/api/v1/bookings/${options.id}`,
+      url: `${url}/api/v1/bookings/${bookingId}`,
       method: 'GET',
       success(res) {
         const booking = res.data;
