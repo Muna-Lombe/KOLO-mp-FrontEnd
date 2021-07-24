@@ -3,23 +3,19 @@
   <view class="navbar">
     <view class="booking-header">Bookings</view>
   </view>
-
-
   <view class="booking-container">
     <view wx:for="{{listings}}" wx:for-item="listing" wx:key="index">
-      <view id= "{{listing.room_id}}" bindtap= "toBookingShow" class="booking">
+      <view id= "{{listing.id}}" bindtap= "toBookingShow" class="booking" style = "background-image:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,23,57,1) 0%, rgba(63,63,93,0.5) 100%, rgba(0,212,255,0.7) 100%),url({{listing.room.room_photo_url}});">
         <view class="name-date">
-          <view class="strong name">{{listing.name}}</view>
+          <view class="strong name">{{listing.room.name}}</view>
           <view>{{listing.date}}</view>
         </view>
         <view class="price-book">
-          <view class="price">CNY {{listing.price}}</view>
+          <view class="price">CNY {{listing.room.price}}</view>
           <view>
-            <!-- <navigator url="/pages/bookings_new/bookings_new"> -->
-              <button id= "{{listing.room_id}}" bindtap="passData" class="btn">
-                <view>Re-book</view> <image src='../images/bookagainicon.png' class='rebook-icon'></image>
-              </button>
-            <!-- </navigator> -->
+            <button id= "{{listing.room_id}}" bindtap="passData" class="btn">
+              <view>Re-book</view> <image src='../images/bookagainicon.png' class='rebook-icon'></image>
+            </button>
           </view>
         </view>
       </view>

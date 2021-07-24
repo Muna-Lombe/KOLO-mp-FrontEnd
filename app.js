@@ -15,7 +15,7 @@ App({
         const hurl = "https://kolo-app.herokuapp.com"
         const lurl = "http://localhost:3000"
         wx.request({
-          url: `${hurl}/api/v1/login`,
+          url: `${lurl}/api/v1/login`,
           method: 'POST',
           data:{code:res.code},
           success(res){
@@ -48,8 +48,8 @@ App({
     // })
   },
   globalData: {
-    url:"https://kolo-app.herokuapp.com",
-    // url:"http://localhost:3000",
+    // url:"https://kolo-app.herokuapp.com",
+    url:"http://localhost:3000",
     userProfile:"",
     userInfo:"",
     language: "EN",
