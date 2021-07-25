@@ -71,7 +71,7 @@ body {
 
 .submit-btn {
   height: 76rpx;
-  width: 76rpx;
+  width: 66rpx;
   background-image: linear-gradient(-60deg, #83c3d4, #61afc7);
   position: absolute;
   right: 0;

@@ -6,11 +6,20 @@
 
     <form bindsubmit="formSubmit">
       <view class="searchbar">
-      <input name="search" class="search" placeholder-class=
-      "searchph" placeholder="Search..." />
-      <view class="submit-btn dflex-center" form-type="submit"><image src='../images/searchicon.png' class='search-icon'></image></view>
+       <input name="search" value="{{value}}" class="search" placeholder-class=
+        "searchph" placeholder="Search..." />
       </view>
+
+      <button class="submit-btn dflex-center" size="mini" form-type="submit" style="position: absolute; left: 615rpx; top: 240rpx; width: 72rpx; height: 76rpx; display: block"><image src='../images/searchicon.png' class='search-icon' style="position: relative; left: -8rpx; top: 15rpx"></image></button>
+
+      <!-- <view class="submit-btn dflex-center" form-type="submit"><image src='../images/searchicon.png' class='search-icon'></image></view> -->
     </form>
+    <!-- <form id="{{id}}" bindsubmit="formSubmit" >
+        <view class="input-box">
+          <input name="comment" value = "{{commentSect}}" class="new-comment mb" placeholder-class="add-comment" placeholder="add comment...." />
+        </view>
+        <button class="submit-btn" form-type="submit">Submit</button>
+      </form> -->
 
   <view class="room-index-container">
 
