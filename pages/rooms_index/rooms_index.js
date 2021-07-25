@@ -57,7 +57,25 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    const page = this;
+    const url = app.globalData.url
+    const search = ""
+    // console.log("search",search)
+    // ?query=${options.search}
+    wx.request({
+      url: `${url}/api/v1/rooms${search}`,
+      method: 'GET',
+      success(res) {
+        // console.log(res)
+        const rooms = res.data.rooms;
+        // console.log("rooms:", rooms)
+        page.setData({
+          rooms: rooms,
+          value: ""
+        });
+        wx.hideToast();
+      }
+    });
   },
 
 

@@ -51,6 +51,7 @@
 }
 
 .btn {
+  font-size: 30rpx;
   background-color:#8fcddf;
   color: white;
   width: 280rpx !important;
