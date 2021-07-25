@@ -67,8 +67,9 @@ Page({
     const page = this
     // console.log("options",options)
     const id = options.id
+    const url = app.globalData.url
     wx.request({
-      url: `https://kolo-app.herokuapp.com/api/v1/rooms/${options.id}`,
+      url: `${url}/api/v1/rooms/${options.id}`,
       success(res) {
         // console.log(res.data)
         const listing = res.data;

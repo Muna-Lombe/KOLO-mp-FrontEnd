@@ -80,13 +80,35 @@ Page({
    * Lifecycle function--Called when page is initially rendered
    */
   onReady: function () {
-
+    
   },
 
   /**
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+    const user = app.globalData.userProfile
+    // console.log("user",user)
+    const name= user.nickName
+    const avatar = user.avatarUrl
+    const page = this
+    const url = app.globalData.url
+    const userinfo = app.globalData.userInfo
+    console.log("userinf:",userinfo)
+    // console.log(options)
+    wx.request({
+      url: `${url}/api/v1/users/${userinfo.id}/profile`,
+      success(res) {
+        // console.log(res.data)
+        const listings = res.data.my_rooms;
+        // console.log(listings)
+        page.setData({
+          listings: listings,
+          name:name,
+          avatar:avatar
+        })
+      }
+    })
 
   },
 
